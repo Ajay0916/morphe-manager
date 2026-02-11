@@ -1,3 +1,22 @@
+# app [1.7.0-dev.2](https://github.com/MorpheApp/morphe-manager/compare/v1.7.0-dev.1...v1.7.0-dev.2) (2026-02-11)
+
+
+### Bug Fixes
+
+* Incorrect content color for badge style ([f4ad9aa](https://github.com/MorpheApp/morphe-manager/commit/f4ad9aaa70d827ab5d511ed63c0eb7bebb999f07))
+
+# app [1.7.0-dev.1](https://github.com/MorpheApp/morphe-manager/compare/v1.6.0...v1.7.0-dev.1) (2026-02-11)
+
+
+### Bug Fixes
+
+* Improve patch dialog logic and fix app info display issues ([#182](https://github.com/MorpheApp/morphe-manager/issues/182)) ([a3153e9](https://github.com/MorpheApp/morphe-manager/commit/a3153e91a6c609a71dbc7850e5edc57f1394f915))
+
+
+### Features
+
+* Get manager release info from static JSON file ([#186](https://github.com/MorpheApp/morphe-manager/issues/186)) ([c75569d](https://github.com/MorpheApp/morphe-manager/commit/c75569df4f5b6d85acf0ad6e4385f6320fc7b0a8))
+
 # app [1.6.0](https://github.com/MorpheApp/morphe-manager/compare/v1.5.0...v1.6.0) (2026-02-08)
 
 
