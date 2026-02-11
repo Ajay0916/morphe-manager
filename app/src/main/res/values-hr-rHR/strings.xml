@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Pokrenuto kofeinom i dobrom humorom</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Izvori zakrpa</string>
-    <string name="sources_management_subtitle">%d izvora instalirano</string>
     <string name="sources_management_open_in_browser">Otvori u pregledniku</string>
     <string name="sources_management_failed_to_open_url">Nije moguće otvoriti URL</string>
     <string name="sources_management_date_added">Dodano</string>
@@ -78,6 +77,8 @@ Kompatibilne verzije:"</string>
     <string name="home_apk_availability_unpatched_label">Nepatchano</string>
     <string name="home_apk_availability_yes">Da, imam</string>
     <string name="home_apk_availability_no">Ne, pomozi mi pronaći</string>
+    <string name="home_apk_use_saved_with_version">Koristiši spremljeni APK (v%s)</string>
+    <string name="home_app_info_no_saved_apk">Nema spremljenog APK-a. Patching će zahtijevati ponovno odabir APK datoteke</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Preuzmite originalni APK</string>
     <string name="home_download_instructions_steps_title">Upute:</string>
@@ -160,12 +161,10 @@ Jeste li sigurni da želite nastaviti?"</string>
     <string name="home_app_info_delete_item_patched_apk">Patchana APK datoteka </string>
     <string name="home_app_info_delete_item_original_apk">Originalna APK datoteka</string>
     <string name="home_app_info_delete_preservation_note">Vaš odabir zakrpe i opcije bit će sačuvani za buduće zakrpe</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Uklonjeno %d zastarjelih zakrpa iz spremljenog odabira</string>
     <string name="home_app_info_patches_name_default">Patchevi</string>
     <string name="home_app_info_patches_name_fallback">Bez naziva</string>
     <string name="home_app_info_patches_replace_fail">Uvoz patcheva nije uspio: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Izvorni APK nije pronađen. Nije moguće ponovno zakrpati ovu aplikaciju.</string>
-    <string name="home_app_info_repatch_requires_original">Ponovna zakrpa zahtijeva originalnu APK datoteku</string>
     <string name="home_app_info_original_package_name">Originalni naziv paketa</string>
     <string name="home_app_info_applied_patches">Primijenjeni patchevi </string>
     <string name="home_app_info_patch_source_used">Korišten izvor patcheva</string>
@@ -180,6 +179,13 @@ Jeste li sigurni da želite nastaviti?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Režim korijena zahtijeva da je originalni APK instaliran na vašem uređaju prije ispravljanja</string>
     <string name="root_gmscore_excluded">Podrška GmsCore je isključena u korijenskom načinu</string>
+    <string name="root_pre_patch_installer_title">Odaberi način instalacije</string>
+    <string name="root_pre_patch_installer_description">Vaš uređaj ima pristup korijenu. Odaberite kako želite instalirati ispravljenu aplikaciju</string>
+    <string name="root_pre_patch_installer_mount_title">Montiraj korijenski APK</string>
+    <string name="root_pre_patch_installer_mount_description">Montiraj ispravljeni APK preko stoke aplikacije. Nema GmsCore potrebe</string>
+    <string name="root_pre_patch_installer_standard_title">Standardna instalacija</string>
+    <string name="root_pre_patch_installer_standard_description">Instaliraj kao odvojenu aplikaciju s podrškom GmsCore. Odaberite instalater (Sistemski instalater, Shizuku, itd.) nakon ispravljanja</string>
+    <string name="root_pre_patch_installer_hint">Metoda instalacije određuje koje ispravke su uključene i ne može se promijeniti nakon ispravljanja</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Greška kopirana u međuspremnik</string>
     <string name="patcher_error_log">Zapisnici pogrešaka</string>
@@ -279,9 +285,10 @@ Jeste li sigurni da želite nastaviti?"</string>
     <string name="settings_appearance_system">Sustav</string>
     <string name="settings_appearance_light">Svijetla</string>
     <string name="settings_appearance_dark">Tamna</string>
-    <string name="settings_appearance_black">Crna</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Akcentna boja</string>
+    <string name="settings_appearance_pure_black">Svetlo crno</string>
+    <string name="settings_appearance_pure_black_description">Koristi pravo crno pozadje za OLED displeje</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Jezik aplikacije</string>
     <string name="settings_appearance_app_language_current">Trenutni jezik</string>

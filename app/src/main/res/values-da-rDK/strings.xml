@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Drevet af koffein og gode patches</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Patch kilder</string>
-    <string name="sources_management_subtitle">%d kilder installeret</string>
     <string name="sources_management_open_in_browser">Åbn links i browser</string>
     <string name="sources_management_failed_to_open_url">Kunne ikke åpne URL</string>
     <string name="sources_management_date_added">Lagt til</string>
@@ -78,6 +77,8 @@ Kompatible versioner:"</string>
     <string name="home_apk_availability_unpatched_label">Ubehandlet</string>
     <string name="home_apk_availability_yes">Ja, jeg har den</string>
     <string name="home_apk_availability_no">Nej, hjælp mig med at finde den</string>
+    <string name="home_apk_use_saved_with_version">Brug gemt APK (v%s)</string>
+    <string name="home_app_info_no_saved_apk">Ingen gemt APK. Patchning vil kræve at vælge APK-filen igen</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Download den originale APK</string>
     <string name="home_download_instructions_steps_title">Instruktioner:</string>
@@ -160,12 +161,10 @@ Er du sikker på, at du vil fortsætte?"</string>
     <string name="home_app_info_delete_item_patched_apk">Patchet APK-fil</string>
     <string name="home_app_info_delete_item_original_apk">Original APK-fil</string>
     <string name="home_app_info_delete_preservation_note">Din patch-valg og indstillinger vil blive bevarede til fremtidig patching</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Fjernet %d forældede opdateringer fra gemt valg</string>
     <string name="home_app_info_patches_name_default">Patches</string>
     <string name="home_app_info_patches_name_fallback">Unavnet</string>
     <string name="home_app_info_patches_replace_fail">Kunne ikke importere patcher: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Original APK ikke fundet. Kan ikke genpatcher denne app</string>
-    <string name="home_app_info_repatch_requires_original">Reparering krever original APK-fil</string>
     <string name="home_app_info_original_package_name">Original pakkenavn</string>
     <string name="home_app_info_applied_patches">Brukte patcher</string>
     <string name="home_app_info_patch_source_used">Brugt kildekode</string>
@@ -180,6 +179,13 @@ Er du sikker på, at du vil fortsætte?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Root-modus kræver, at original APK er installeret på dit enhed før patching</string>
     <string name="root_gmscore_excluded">GmsCore support patch er udelukket i root-tilstand</string>
+    <string name="root_pre_patch_installer_title">Vælg installationsmetode</string>
+    <string name="root_pre_patch_installer_description">Din enhed har root-adgang. Vælg, hvordan du vil installere den patcherede app</string>
+    <string name="root_pre_patch_installer_mount_title">Root Mount</string>
+    <string name="root_pre_patch_installer_mount_description">Mount patcheret APK over den originale app. Ingen GmsCore nødvendig</string>
+    <string name="root_pre_patch_installer_standard_title">Standard Install</string>
+    <string name="root_pre_patch_installer_standard_description">Installer som en separat app med GmsCore support. Vælg installer (System installer, Shizuku, etc.) efter patching</string>
+    <string name="root_pre_patch_installer_hint">Installationsmetoden bestemmer, hvilke patches der er inkluderet og kan ikke ændres efter patching</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Fejl kopieret til udklipsholder</string>
     <string name="patcher_error_log">Fejlprotokol</string>
@@ -279,9 +285,10 @@ Er du sikker på, at du vil fortsætte?"</string>
     <string name="settings_appearance_system">System</string>
     <string name="settings_appearance_light">Lys</string>
     <string name="settings_appearance_dark">Mørk</string>
-    <string name="settings_appearance_black">Sort</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Akkentfarge</string>
+    <string name="settings_appearance_pure_black">Ren sort</string>
+    <string name="settings_appearance_pure_black_description">Brug rigtige sorte baggrunde for OLED-displays</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">App-sprog</string>
     <string name="settings_appearance_app_language_current">Nåværende språk</string>

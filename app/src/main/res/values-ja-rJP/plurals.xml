@@ -18,4 +18,10 @@
     <plurals name="sources_dialog_enabled_toast">
         <item quantity="other">%d 件のソースを有効化しました</item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="other">保存済みセレクションから互換性を失ったパッチを %1$d 件削除しました</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="other">インストール済みのソース %1$d 件</item>
+    </plurals>
 </resources>

@@ -40,7 +40,6 @@
     <string name="home_greeting_10">कैफीन और अच्छे पैच द्वारा संचालित</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">पैच स्रोत</string>
-    <string name="sources_management_subtitle">%d स्रोत स्थापित हैं</string>
     <string name="sources_management_open_in_browser">खोल में खोल करना</string>
     <string name="sources_management_failed_to_open_url">URL खोलने में विफल रहा</string>
     <string name="sources_management_date_added">जोड़ा गया</string>
@@ -78,6 +77,8 @@
     <string name="home_apk_availability_unpatched_label">अपडेट किए बिना</string>
     <string name="home_apk_availability_yes">हां, मेरे पास है</string>
     <string name="home_apk_availability_no">नहीं, इसे ढूंढने में मेरी मदद करो</string>
+    <string name="home_apk_use_saved_with_version">प्रतिलिपि APK (v%s) का उपयोग करें</string>
+    <string name="home_app_info_no_saved_apk">कोई प्रतिलिपि APK नहीं है। पट्च करना पुनः APK फ़ाइल का चयन करना आवश्यक होगा</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">ओरिजनल APK डाउनलोड करें</string>
     <string name="home_download_instructions_steps_title">निर्देश:</string>
@@ -160,12 +161,10 @@
     <string name="home_app_info_delete_item_patched_apk">पथचित APK फ़ाइल</string>
     <string name="home_app_info_delete_item_original_apk">मूल APK फ़ाइल</string>
     <string name="home_app_info_delete_preservation_note">आपका पथच चयन और विकल्प भविष्य के पथच के लिए सुरक्षित रहेंगे।</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Removed %d पुराने पटचेस से बचे हुए चयन को हटा दिया गया है</string>
     <string name="home_app_info_patches_name_default">पैच</string>
     <string name="home_app_info_patches_name_fallback">अनाम</string>
     <string name="home_app_info_patches_replace_fail">पैच आयात करने में विफल हो गया: %s</string>
     <string name="home_app_info_repatch_no_original_apk"> मूल APK नहीं मिला. इस ऐप को पुनः पैच करना संभव नहीं है।</string>
-    <string name="home_app_info_repatch_requires_original">रीपैच के लिए ओरिजिनल एपीएम आवश्यक है</string>
     <string name="home_app_info_original_package_name">ओरिजिनल पैकेज नाम</string>
     <string name="home_app_info_applied_patches">लागू पैच</string>
     <string name="home_app_info_patch_source_used">पैच स्रोत का उपयोग किया गया</string>
@@ -179,6 +178,13 @@
     <string name="home_app_info_app_deleted_description">यह एप्लिकेशन प्रबंधक से बाहर हटाई गई थी। इसकी कार्यक्षमता को पुनः स्थापित करने के लिए पुनः पटच करें</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">रूट मोड के लिए, पैचिंग शुरू करने से पहले आपके डिवाइस पर APK को इंस्टॉल करना आवश्यक है।</string>
+    <string name="root_pre_patch_installer_title">स्थापना विधि का चयन करें</string>
+    <string name="root_pre_patch_installer_description">आपका डिवाइस रूट एक्सेस रखता है। पट्च्ड एप्लिकेशन इंस्टॉल करने का तरीका चुनें।</string>
+    <string name="root_pre_patch_installer_mount_title">रूट माउंट</string>
+    <string name="root_pre_patch_installer_mount_description">स्टॉक एप्लिकेशन के ऊपर पट्च्ड एपीके माउंट करें। जीएमएसकोर आवश्यक नहीं।</string>
+    <string name="root_pre_patch_installer_standard_title">सामान्य इंस्टॉल</string>
+    <string name="root_pre_patch_installer_standard_description">पट्चिंग के बाद इंस्टॉलर (सिस्टम इंस्टॉलर, शिज़ुकी आदि) चुनकर अलग एप्लिकेशन के रूप में इंस्टॉल करें।</string>
+    <string name="root_pre_patch_installer_hint">इंस्टॉलेशन मेथड पट्चिंग के बाद बदल नहीं सकती जाती है।</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">%1$d / %2$d patches</string>
     <string name="patcher_error_log">त्रुटि रिपोर्ट</string>
@@ -270,9 +276,10 @@
     <string name="settings_appearance_system">सिस्टम</string>
     <string name="settings_appearance_light">लाइट</string>
     <string name="settings_appearance_dark">डार्क</string>
-    <string name="settings_appearance_black">ब्लैक</string>
     <string name="settings_appearance_dynamic">मैटेरियल यू</string>
     <string name="settings_appearance_accent_color">अक्सेंट रंग</string>
+    <string name="settings_appearance_pure_black">शुद्ध काला</string>
+    <string name="settings_appearance_pure_black_description">ओएलईडी डिस्प्ले के लिए सही काला बैकग्राउंड उपयोग करें।</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">एप्लिकेशन भाषा</string>
     <string name="settings_appearance_app_language_current">वर्तमान भाषा</string>

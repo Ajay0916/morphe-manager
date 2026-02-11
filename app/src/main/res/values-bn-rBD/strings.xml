@@ -40,7 +40,6 @@
     <string name="home_greeting_10">ক্যাফেইন ও ভালো প্যাচ দিয়ে চালিত</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">প্যাচ উৎস</string>
-    <string name="sources_management_subtitle">%d সোর্স ইনস্টল করা হয়েছে</string>
     <string name="sources_management_open_in_browser">লিংক ব্রাউজারে খুলুন</string>
     <string name="sources_management_failed_to_open_url">URL খুলতে ব্যর্থ হয়েছে</string>
     <string name="sources_management_date_added">যোগ করা হয়েছে</string>
@@ -78,6 +77,8 @@
     <string name="home_apk_availability_unpatched_label">অনুশিষ্টিত</string>
     <string name="home_apk_availability_yes">হ্যাঁ, আমার আছে</string>
     <string name="home_apk_availability_no">না, আমাকে এটি খুঁজে পেতে সাহায্য করুন</string>
+    <string name="home_apk_use_saved_with_version">বর্তমান সংরক্ষিত APK (v%s) ব্যবহার করুন</string>
+    <string name="home_app_info_no_saved_apk">কোন সংরক্ষিত APK নেই। প্যাচিংয়ের জন্য আবার APK ফাইল নির্বাচন করতে হবে</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">মূল APK ডাউনলোড করুন</string>
     <string name="home_download_instructions_steps_title">নির্দেশাবলী:</string>
@@ -160,12 +161,10 @@
     <string name="home_app_info_delete_item_patched_apk">প্যাচড APK ফাইল</string>
     <string name="home_app_info_delete_item_original_apk">অরিজিনাল APK ফাইল</string>
     <string name="home_app_info_delete_preservation_note">আপনার প্যাচ নির্বাচন ও অপশনগুলি ভবিষ্যতের প্যাচিংয়ের জন্য সংরক্ষিত থাকবে</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">অনুসরণ করা হয়েছে %d মৌলিক প্যাচগুলি বর্জন করা হয়েছে</string>
     <string name="home_app_info_patches_name_default">প্যাচগুলি</string>
     <string name="home_app_info_patches_name_fallback">নামহীন</string>
     <string name="home_app_info_patches_replace_fail">প্যাচগুলি আমদানি করতে ব্যর্থ হয়েছে: %s</string>
     <string name="home_app_info_repatch_no_original_apk">আরিজিনাল এপিকে খুঁজে পাওয়া যায়নি. এই অ্যাপের রিপ্যাচ করতে পারবো না</string>
-    <string name="home_app_info_repatch_requires_original">পুনরপ্যাচের জন্য মূল এপিআক ফাইল প্রয়োজন</string>
     <string name="home_app_info_original_package_name">মূল প্যাকেজ নাম</string>
     <string name="home_app_info_applied_patches">আমদান প্যাচগুলি</string>
     <string name="home_app_info_patch_source_used">প্যাচের উৎস ব্যবহৃত হয়েছে</string>
@@ -180,6 +179,13 @@
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">রুট মোডে আরিজিনাল এপিকে ডিভাইসে ইনস্টল করা থাকতে হবে প্যাচিংয়ের আগে</string>
     <string name="root_gmscore_excluded">রুট মোডে GmsCore সমর্থন প্যাচ বাদ দেওয়া হয়েছে</string>
+    <string name="root_pre_patch_installer_title">স্থাপন পদ্ধতি নির্বাচন করুন</string>
+    <string name="root_pre_patch_installer_description">আপনার ডিভাইসটি রুট অ্যাক্সেস পেয়েছে। প্যাচড অ্যাপ ইনস্টল করার জন্য কিভাবে চান তা নির্বাচন করুন</string>
+    <string name="root_pre_patch_installer_mount_title">রুট মাউন্ট</string>
+    <string name="root_pre_patch_installer_mount_description">স্টক অ্যাপের উপর প্যাচড এপিকে মাউন্ট করুন। গমসকোর প্রয়োজন নেই</string>
+    <string name="root_pre_patch_installer_standard_title">স্ট্যান্ডার্ড ইনস্টল</string>
+    <string name="root_pre_patch_installer_standard_description">গমসকোর সমর্থন সহ প্যাচিংয়ের পরে ইনস্টলার নির্বাচন করে (সিস্টেম ইনস্টলার, শিজুকু, ইত্যাদা) আলাদা অ্যাপ হিসাবে ইনস্টল করুন</string>
+    <string name="root_pre_patch_installer_hint">ইনস্টলেশন মেথডটি প্যাচিংয়ের পরে পরিবর্তন করা যাবে না, প্যাচগুলি অন্তর্ভুক্ত করে</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">ত্রুটি ক্লিপবোর্ডে অনুলিপি করা হয়েছে</string>
     <string name="patcher_error_log">ত্রুটি রিপোর্ট</string>
@@ -279,9 +285,10 @@
     <string name="settings_appearance_system">লাইট</string>
     <string name="settings_appearance_light">কালো</string>
     <string name="settings_appearance_dark">কালো</string>
-    <string name="settings_appearance_black">ম্যাটেরিয়াল ইউ</string>
     <string name="settings_appearance_dynamic">এক্সেন্ট কালার</string>
     <string name="settings_appearance_accent_color">অ্যাকসেন্ট রঙ</string>
+    <string name="settings_appearance_pure_black">পুরো কালো</string>
+    <string name="settings_appearance_pure_black_description">ওএলইডি ডিসপ্লে জন্য সত্য কালো পটভূমি ব্যবহার করুন</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">অ্যাপ্লিকেশনের ভাষা</string>
     <string name="settings_appearance_app_language_current">বর্তমান ভাষা</string>

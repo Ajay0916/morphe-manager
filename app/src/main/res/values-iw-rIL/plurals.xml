@@ -36,4 +36,16 @@
         <item quantity="many">הפעיל %d מקורות</item>
         <item quantity="other">הפעיל %d מקורות</item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="one">הסר %1$d תיקון מיושן מהסלקציה המוגמרת</item>
+        <item quantity="two">הסר %1$d תיקונים מיושנים מהסלקציה המוגמרת</item>
+        <item quantity="many">הסר %1$d תיקונים מיושנים מהסלקציה המוגמרת</item>
+        <item quantity="other">הסר %1$d תיקונים מיושנים מהסלקציה המוגמרת</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="one">%1$d מקורstalled</item>
+        <item quantity="two">%1$d מקורותstalled</item>
+        <item quantity="many">%1$d מקורותstalled</item>
+        <item quantity="other">%1$d מקורותstalled</item>
+    </plurals>
 </resources>

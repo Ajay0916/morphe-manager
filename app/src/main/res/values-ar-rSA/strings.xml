@@ -40,7 +40,6 @@
     <string name="home_greeting_10">مدعوم بالكافيين والتعديلات الجيدة</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">مصادر التعديل</string>
-    <string name="sources_management_subtitle">%d مصادر تم تثبيتها</string>
     <string name="sources_management_open_in_browser">فتح في المتصفح</string>
     <string name="sources_management_failed_to_open_url">فشل في فتح الرابط</string>
     <string name="sources_management_date_added">تمت الإضافة</string>
@@ -78,6 +77,8 @@
     <string name="home_apk_availability_unpatched_label">غير معدل</string>
     <string name="home_apk_availability_yes">نعم، لديّ</string>
     <string name="home_apk_availability_no">لا، ساعدني في العثور عليه</string>
+    <string name="home_apk_use_saved_with_version">استخدم APK المحفوظة (v%s)</string>
+    <string name="home_app_info_no_saved_apk">لا يوجد APK محفوظة. ستتطلب عملية التثبيت إعادة اختيار ملف APK</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">تنزيل ملف APK الأصلي</string>
     <string name="home_download_instructions_steps_title">التعليمات:</string>
@@ -160,12 +161,10 @@
     <string name="home_app_info_delete_item_patched_apk">ملف APK معدّل</string>
     <string name="home_app_info_delete_item_original_apk">ملف APK الأصلي</string>
     <string name="home_app_info_delete_preservation_note">سيتم الاحتفاظ باختياراتك وخياراتك للتعديلات المستقبلية</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">تمت إزالة %d تعديلات قديمة من التحديد المحفوظ</string>
     <string name="home_app_info_patches_name_default">التعديلات</string>
     <string name="home_app_info_patches_name_fallback">بدون اسم</string>
     <string name="home_app_info_patches_replace_fail">فشل استيراد التعديلات: %s</string>
     <string name="home_app_info_repatch_no_original_apk">لم يتم العثور على ملف APK الأصلي. لا يمكن إعادة تعديل هذا التطبيق</string>
-    <string name="home_app_info_repatch_requires_original">إعادة التعديل يتطلب ملف APK الأصلي</string>
     <string name="home_app_info_original_package_name">اسم الحزمة الأصلي</string>
     <string name="home_app_info_applied_patches">التعديلات المطبقة</string>
     <string name="home_app_info_patch_source_used">مصدر التعديل المستخدم</string>
@@ -180,6 +179,13 @@
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">يتطلب وضع Root تثبيت ملف APK الأصلي على جهازك قبل التعديل</string>
     <string name="root_gmscore_excluded">تم استبعاد تعديل دعم GmsCore في وضع Root</string>
+    <string name="root_pre_patch_installer_title">اختر طريقة التثبيت</string>
+    <string name="root_pre_patch_installer_description">لديك الوصول الجذر إلى الجهاز. اختر كيف تريد تثبيت التطبيق المحدث</string>
+    <string name="root_pre_patch_installer_mount_title">جذر التثبيت</string>
+    <string name="root_pre_patch_installer_mount_description">تثبيت APK المحدث فوق التطبيق القياسي. لا تحتاج إلى GmsCore</string>
+    <string name="root_pre_patch_installer_standard_title">تثبيت قياسي</string>
+    <string name="root_pre_patch_installer_standard_description">تثبيت كمتطبيق منفصل مع دعم GmsCore. اختر تثبيت (تثبيت النظام, Shizuku, إلخ.) بعد التحديث</string>
+    <string name="root_pre_patch_installer_hint">تحدد طريقة التثبيت أي تحديثات يتم تضمينها ولا يمكن تغييرها بعد التحديث</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">تم نسخ الخطأ إلى الحافظة</string>
     <string name="patcher_error_log">سجل الأخطاء</string>
@@ -279,9 +285,10 @@
     <string name="settings_appearance_system">النظام</string>
     <string name="settings_appearance_light">فاتح</string>
     <string name="settings_appearance_dark">داكن</string>
-    <string name="settings_appearance_black">أسود</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">لون التمييز</string>
+    <string name="settings_appearance_pure_black">أسود خالص</string>
+    <string name="settings_appearance_pure_black_description">استخدام خلفيات سوداء حقيقية للشاشات OLED</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">لغة التطبيق</string>
     <string name="settings_appearance_app_language_current">اللغة الحالية</string>

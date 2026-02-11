@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Angetrieben von Koffein und guten Patches</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Patch-Quellen</string>
-    <string name="sources_management_subtitle">%d Quellen installiert</string>
     <string name="sources_management_open_in_browser">Im Browser öffnen</string>
     <string name="sources_management_failed_to_open_url">Fehler beim Öffnen der URL</string>
     <string name="sources_management_date_added">Hinzugefügt am</string>
@@ -78,6 +77,8 @@ Kompatible Versionen:"</string>
     <string name="home_apk_availability_unpatched_label">Unbehandelt</string>
     <string name="home_apk_availability_yes">Ja, ich habe es </string>
     <string name="home_apk_availability_no">Nein, hilf mir, es zu finden </string>
+    <string name="home_apk_use_saved_with_version">Verwenden Sie das gespeicherte APK (v%s)</string>
+    <string name="home_app_info_no_saved_apk">Kein gespeichertes APK. Das Patching erfordert die erneute Auswahl der APK-Datei</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Laden Sie die ursprüngliche APK herunter </string>
     <string name="home_download_instructions_steps_title">Anleitung:</string>
@@ -160,12 +161,10 @@ Möchten Sie trotzdem fortfahren?"</string>
     <string name="home_app_info_delete_item_patched_apk">Geänderte APK-Datei</string>
     <string name="home_app_info_delete_item_original_apk">Ursprüngliche APK-Datei</string>
     <string name="home_app_info_delete_preservation_note">Deine Patchauswahl und Optionen werden für zukünftiges Patchen erhalten.</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Entfernt %d veraltete Patches aus der gespeicherten Auswahl</string>
     <string name="home_app_info_patches_name_default">Patches</string>
     <string name="home_app_info_patches_name_fallback">Unbenannt</string>
     <string name="home_app_info_patches_replace_fail">Fehler beim Importieren der Patches: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Original-APK nicht gefunden. Kann diese App nicht erneut patchen</string>
-    <string name="home_app_info_repatch_requires_original">Um die App erneut zu patchen, wird das ursprüngliche APK-Datei benötigt.</string>
     <string name="home_app_info_original_package_name">Originaler Paketname</string>
     <string name="home_app_info_applied_patches">Angewandte Patches</string>
     <string name="home_app_info_patch_source_used">Verwendete Patch-Bündel</string>
@@ -180,6 +179,13 @@ Möchten Sie trotzdem fortfahren?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Root-Modus erfordert, dass die ursprüngliche APK-Datei auf deinem Gerät installiert ist, bevor du mit dem Patchen beginnst</string>
     <string name="root_gmscore_excluded">GmsCore-Unterstützungspatch ist im Root-Modus ausgeschlossen</string>
+    <string name="root_pre_patch_installer_title">Installationsmethode auswählen</string>
+    <string name="root_pre_patch_installer_description">Ihr Gerät hat Root-Zugriff. Wählen Sie, wie Sie die gepatchte App installieren möchten</string>
+    <string name="root_pre_patch_installer_mount_title">Root-Mount</string>
+    <string name="root_pre_patch_installer_mount_description">Patchte APK über die Standard-App mounten. Kein GmsCore erforderlich</string>
+    <string name="root_pre_patch_installer_standard_title">Standard-Installation</string>
+    <string name="root_pre_patch_installer_standard_description">Installieren Sie als separate App mit GmsCore-Unterstützung. Wählen Sie den Installer (Systeminstaller, Shizuku, etc.) nach dem Patching</string>
+    <string name="root_pre_patch_installer_hint">Die Installationsmethode bestimmt, welche Patches enthalten sind und nach dem Patching nicht verändert werden kann</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Fehler in die Zwischenablage kopiert</string>
     <string name="patcher_error_log">Fehlerprotokoll</string>
@@ -279,9 +285,10 @@ Möchten Sie trotzdem fortfahren?"</string>
     <string name="settings_appearance_system">System</string>
     <string name="settings_appearance_light">Hell</string>
     <string name="settings_appearance_dark">Dunkel</string>
-    <string name="settings_appearance_black">Schwarz</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Akzentfarbe</string>
+    <string name="settings_appearance_pure_black">Reines Schwarz</string>
+    <string name="settings_appearance_pure_black_description">Verwenden Sie echte schwarze Hintergründe für OLED-Displays</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">App-Sprache</string>
     <string name="settings_appearance_app_language_current">Aktuelle Sprache</string>

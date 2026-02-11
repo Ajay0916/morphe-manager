@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Napędzani kawą i dobrymi modyfikacjami</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Źródła modyfikacji</string>
-    <string name="sources_management_subtitle">%d zainstalowanych źródeł</string>
     <string name="sources_management_open_in_browser">Otwórz w przeglądarce</string>
     <string name="sources_management_failed_to_open_url">Nie udało się otworzyć strony</string>
     <string name="sources_management_date_added">Dodano</string>
@@ -78,6 +77,8 @@ Kompatybilne wersje:"</string>
     <string name="home_apk_availability_unpatched_label">Niezmodyfikowana</string>
     <string name="home_apk_availability_yes">Tak, mam</string>
     <string name="home_apk_availability_no">Nie, pomóż mi ją znaleźć</string>
+    <string name="home_apk_use_saved_with_version">Użyj zapisanego pliku APK (v%s)</string>
+    <string name="home_app_info_no_saved_apk">Brak zapisanego pliku APK. Modyfikacja będzie wymagać ponownego wybrania pliku</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Pobierz oryginalny plik APK</string>
     <string name="home_download_instructions_steps_title">Instrukcje:</string>
@@ -160,12 +161,10 @@ Czy na pewno chcesz kontynuować?"</string>
     <string name="home_app_info_delete_item_patched_apk">Zmodyfikowany plik APK</string>
     <string name="home_app_info_delete_item_original_apk">Oryginalny plik APK</string>
     <string name="home_app_info_delete_preservation_note">Wybrane modyfikacje i opcje zostaną zachowane do przyszłego modyfikowania</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Usunięto %d przestarzałych modyfikacji z zapisanych wyborów</string>
     <string name="home_app_info_patches_name_default">Modyfikacje</string>
     <string name="home_app_info_patches_name_fallback">Nienazwana</string>
     <string name="home_app_info_patches_replace_fail">Nie udało się zaimportować modyfikacji: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Nie znaleziono oryginalnego pliku APK. Nie można ponownie zmodyfikować tej aplikacji</string>
-    <string name="home_app_info_repatch_requires_original">Ponowna modyfikacja wymaga oryginalnego pliku APK</string>
     <string name="home_app_info_original_package_name">Oryginalna nazwa pakietu</string>
     <string name="home_app_info_applied_patches">Zastosowane modyfikacje</string>
     <string name="home_app_info_patch_source_used">Użyte źródło modyfikacji</string>
@@ -180,6 +179,13 @@ Czy na pewno chcesz kontynuować?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Tryb root wymaga zainstalowania oryginalnego pliku APK na urządzeniu przed zmodyfikowaniem</string>
     <string name="root_gmscore_excluded">Wsparcie dla GmsCore jest wyłączone w trybie root</string>
+    <string name="root_pre_patch_installer_title">Wybierz metodę instalacji</string>
+    <string name="root_pre_patch_installer_description">Wykryto uprawnienia root. Wybierz sposób instalacji zmodyfikowanej aplikacji</string>
+    <string name="root_pre_patch_installer_mount_title">Mountowanie Root</string>
+    <string name="root_pre_patch_installer_mount_description">Zmountuj zmodyfikowany plik APK nad oryginalną aplikacją. GmsCore nie jest wymagany</string>
+    <string name="root_pre_patch_installer_standard_title">Standardowa instalacja</string>
+    <string name="root_pre_patch_installer_standard_description">Zainstaluj jako oddzielną aplikację z obsługą GmsCore. Wybierz instalator (Systemowy, Shizuku itp.) po zakończeniu modyfikacji</string>
+    <string name="root_pre_patch_installer_hint">Metoda instalacji określa zakres dostępnych modyfikacji i nie może zostać zmieniona po rozpoczęciu procesu</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Skopiowano błąd do schowka</string>
     <string name="patcher_error_log">Dziennik błędów</string>
@@ -279,9 +285,10 @@ Czy na pewno chcesz kontynuować?"</string>
     <string name="settings_appearance_system">Systemowy</string>
     <string name="settings_appearance_light">Jasny</string>
     <string name="settings_appearance_dark">Ciemny</string>
-    <string name="settings_appearance_black">Czarny</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Kolor akcentu</string>
+    <string name="settings_appearance_pure_black">Głęboka czerń</string>
+    <string name="settings_appearance_pure_black_description">Użyj głębokiej czerni tła dla wyświetlaczy OLED</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Język aplikacji</string>
     <string name="settings_appearance_app_language_current">Obecny język</string>

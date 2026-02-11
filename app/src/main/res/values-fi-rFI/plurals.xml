@@ -24,4 +24,12 @@
         <item quantity="one">Käytössä %d lähde</item>
         <item quantity="other">Käytössä %d lähdettä</item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="one">Poistettiin tallennetusta valinnosta %1$d vanhentunut pätkä</item>
+        <item quantity="other">Poistettiin tallennetusta valinnosta %1$d vanhentunutta pätkää</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="one">%1$d lähde asennettu</item>
+        <item quantity="other">%1$d lähdettä asennettu</item>
+    </plurals>
 </resources>

@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Poháněno kávou a dobrými záplatami</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Zdroje záplat</string>
-    <string name="sources_management_subtitle">%d zdrojů nainstalováno</string>
     <string name="sources_management_open_in_browser">Otevřít v prohlížeči</string>
     <string name="sources_management_failed_to_open_url">Nepodařilo se otevřít URL</string>
     <string name="sources_management_date_added">Přidáno</string>
@@ -78,6 +77,8 @@ Kompatibilní verze:"</string>
     <string name="home_apk_availability_unpatched_label">Neupravený</string>
     <string name="home_apk_availability_yes">Ano, mám ji</string>
     <string name="home_apk_availability_no">Ne, pomozte mi ji najít</string>
+    <string name="home_apk_use_saved_with_version">Použít uložené APK (v%s)</string>
+    <string name="home_app_info_no_saved_apk">Není uloženo žádné APK. Pro patchování bude třeba vybrat soubor APK znovu.</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Stáhnout původní APK</string>
     <string name="home_download_instructions_steps_title">Postup:</string>
@@ -160,12 +161,10 @@ Opravdu chcete pokračovat?"</string>
     <string name="home_app_info_delete_item_patched_apk">Záplatovaný soubor APK</string>
     <string name="home_app_info_delete_item_original_apk">Originální soubor APK</string>
     <string name="home_app_info_delete_preservation_note">Vaše výběry záplaty a nastavení budou uchovány pro budoucí záplaty.</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Odstraněno %d zastaralých oprav z uložené výběru</string>
     <string name="home_app_info_patches_name_default">Záplaty</string>
     <string name="home_app_info_patches_name_fallback">Bez názvu</string>
     <string name="home_app_info_patches_replace_fail">Selhalo importování záplat: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Originální soubor APK nebyl nalezen. Nelze opětovně záplatovat tuto aplikaci</string>
-    <string name="home_app_info_repatch_requires_original">Opětovné záplatování vyžaduje originální APK soubor</string>
     <string name="home_app_info_original_package_name">Původní název balíčku</string>
     <string name="home_app_info_applied_patches">Použité balíčky záplat</string>
     <string name="home_app_info_patch_source_used">Zdroje záplat</string>
@@ -180,6 +179,13 @@ Opravdu chcete pokračovat?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Režim root vyžaduje, aby před záplatováním byl na vašem zařízení nainstalován původní APK</string>
     <string name="root_gmscore_excluded">Záplata s podporou GmsCore je v root režimu vyloučena</string>
+    <string name="root_pre_patch_installer_title">Vyberte způsob instalace</string>
+    <string name="root_pre_patch_installer_description">Vaše zařízení má přístup root. Vyberte, jak chcete nainstalovat opatřenou aplikaci.</string>
+    <string name="root_pre_patch_installer_mount_title">Mount root</string>
+    <string name="root_pre_patch_installer_mount_description">Mount opatřený APK nad standardní aplikací. Nebožský GmsCore není potřeba</string>
+    <string name="root_pre_patch_installer_standard_title">Standardní instalace</string>
+    <string name="root_pre_patch_installer_standard_description">Instalujte jako oddělenou aplikaci s podporou GmsCore. Vyberte instalační program (Systémový instalační program, Shizuku atd.) po opatření</string>
+    <string name="root_pre_patch_installer_hint">Metoda instalace určuje, které opatření jsou zahrnuty a nelze je změnit po opatření</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Chyba zkopírována do schránky</string>
     <string name="patcher_error_log">Protokol chyb</string>
@@ -279,9 +285,10 @@ Opravdu chcete pokračovat?"</string>
     <string name="settings_appearance_system">Systém</string>
     <string name="settings_appearance_light">Světlé</string>
     <string name="settings_appearance_dark">Temné</string>
-    <string name="settings_appearance_black">Černé</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Barva akcentu</string>
+    <string name="settings_appearance_pure_black">Čistá černá</string>
+    <string name="settings_appearance_pure_black_description">Používejte pravé černé pozadí pro displeje OLED</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Jazyk aplikace</string>
     <string name="settings_appearance_app_language_current">Aktuální jazyk</string>

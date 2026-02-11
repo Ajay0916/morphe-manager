@@ -24,4 +24,12 @@
         <item quantity="one">Abilitato %d fonte</item>
         <item quantity="other">Abilitate %d fonti</item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="one">Rimosso %1$d patch obsoleto dalla selezione salvata</item>
+        <item quantity="other">Rimosse %1$d patch obsolete dalla selezione salvata</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="one">%1$d fonte installata</item>
+        <item quantity="other">%1$d fonti installate</item>
+    </plurals>
 </resources>

@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Захранва се от кофеин и добри кръпки</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Източници за поправки</string>
-    <string name="sources_management_subtitle">%d инсталирани източника</string>
     <string name="sources_management_open_in_browser">Отваряне в браузър</string>
     <string name="sources_management_failed_to_open_url">Неуспешно отваряне на URL</string>
     <string name="sources_management_date_added">Добавено</string>
@@ -78,6 +77,8 @@
     <string name="home_apk_availability_unpatched_label">Необновен</string>
     <string name="home_apk_availability_yes">Да, имам я</string>
     <string name="home_apk_availability_no">Не, помогни ми да намеря</string>
+    <string name="home_apk_use_saved_with_version">Използвайте запазеното APK (в%с)</string>
+    <string name="home_app_info_no_saved_apk">Няма запазено APK. Пatching ще изисква отново да изберете APK файл.</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Изтеглете оригинален APK</string>
     <string name="home_download_instructions_steps_title">Инструкции:</string>
@@ -160,12 +161,10 @@
     <string name="home_app_info_delete_item_patched_apk">Поправен APK файл</string>
     <string name="home_app_info_delete_item_original_apk">Оригинален APK файл</string>
     <string name="home_app_info_delete_preservation_note">Вашият избор за поправка и опции ще бъдат запазени за бъдещи поправки</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Изтрих %d стари патча от запазеното избрано</string>
     <string name="home_app_info_patches_name_default">Замества</string>
     <string name="home_app_info_patches_name_fallback">Без име</string>
     <string name="home_app_info_patches_replace_fail">Неуспешно заместим патчове: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Оригиналният APK не е намерен. Не може да се препачва това приложение.</string>
-    <string name="home_app_info_repatch_requires_original">Заместването изисква оригиналния APK файл</string>
     <string name="home_app_info_original_package_name">Име на оригиналното пакети</string>
     <string name="home_app_info_applied_patches">Приложени замести</string>
     <string name="home_app_info_patch_source_used">Използван източник на патч</string>
@@ -180,6 +179,13 @@
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Режимът \"Root\" изисква оригиналния APK да бъде инсталиран на вашето устройство преди да се прилагат патчове</string>
     <string name="root_gmscore_excluded">Поддръжката на GmsCore е изключена в режим на корен</string>
+    <string name="root_pre_patch_installer_title">Изберете метод на инсталиране</string>
+    <string name="root_pre_patch_installer_description">Устройството има достъп до корен. Изберете как да инсталирате патчираната приложението</string>
+    <string name="root_pre_patch_installer_mount_title">Монтиране на корен</string>
+    <string name="root_pre_patch_installer_mount_description">Монтиране на патчиран APK над стоковата приложение. Не е нужна GmsCore</string>
+    <string name="root_pre_patch_installer_standard_title">Стандартно инсталиране</string>
+    <string name="root_pre_patch_installer_standard_description">Инсталиране като отделно приложение с поддръжка на GmsCore. Изберете инсталатор (Системен инсталатор, Shizuku, и т.н.) след патчирането</string>
+    <string name="root_pre_patch_installer_hint">Начинът на инсталиране определя коя патч е включен и не може да се промени след патчирането</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Грешка е копирана в клипборда</string>
     <string name="patcher_error_log">Дневник на грешки</string>
@@ -279,9 +285,10 @@
     <string name="settings_appearance_system">Система</string>
     <string name="settings_appearance_light">Светлина</string>
     <string name="settings_appearance_dark">Тъмна</string>
-    <string name="settings_appearance_black">Черно</string>
     <string name="settings_appearance_dynamic">Материал Ю</string>
     <string name="settings_appearance_accent_color">Цвят на акцент</string>
+    <string name="settings_appearance_pure_black">Натурално черно</string>
+    <string name="settings_appearance_pure_black_description">Използване на истински черни фона за OLED екрани</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Език на приложението</string>
     <string name="settings_appearance_app_language_current">Текущият език</string>

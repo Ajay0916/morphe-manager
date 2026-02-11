@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Nạp caffein có ngay bản vá xịn</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Nguồn vá</string>
-    <string name="sources_management_subtitle">Đã cài đặt %d nguồn</string>
     <string name="sources_management_open_in_browser">Mở trong trình duyệt</string>
     <string name="sources_management_failed_to_open_url">Không thể mở URL</string>
     <string name="sources_management_date_added">Đã thêm</string>
@@ -78,6 +77,8 @@ Danh sách phiên bản tương thích:"</string>
     <string name="home_apk_availability_unpatched_label">Chưa vá</string>
     <string name="home_apk_availability_yes">Rồi, tôi đã có nó</string>
     <string name="home_apk_availability_no">Chưa, hãy giúp tôi tìm nó</string>
+    <string name="home_apk_use_saved_with_version">Sử dụng APK đã lưu (v%s)</string>
+    <string name="home_app_info_no_saved_apk">Không có APK đã lưu. Phát hiện sẽ yêu cầu chọn lại tệp APK</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Tải APK gốc</string>
     <string name="home_download_instructions_steps_title">Hướng dẫn:</string>
@@ -160,12 +161,10 @@ Bạn có chắc muốn tiếp tục không?"</string>
     <string name="home_app_info_delete_item_patched_apk">Tệp APK đã vá</string>
     <string name="home_app_info_delete_item_original_apk">Tệp APK gốc</string>
     <string name="home_app_info_delete_preservation_note">Các bản vá bạn đã chọn và các tuỳ chỉnh sẽ được lưu lại cho những lần vá sau</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Đã loại bỏ %d bản vá lỗi thời khỏi danh sách bản vá đã chọn</string>
     <string name="home_app_info_patches_name_default">Số bản vá</string>
     <string name="home_app_info_patches_name_fallback">Chưa có tên</string>
     <string name="home_app_info_patches_replace_fail">Không thể nhập bản vá: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Không tìm thấy APK gốc nên không thể vá lại ứng dụng này</string>
-    <string name="home_app_info_repatch_requires_original">Bạn cần APK gốc để vá lại</string>
     <string name="home_app_info_original_package_name">Tên gói ban đầu</string>
     <string name="home_app_info_applied_patches">Bản vá đã áp dụng</string>
     <string name="home_app_info_patch_source_used">Nguồn vá đã dùng</string>
@@ -180,6 +179,13 @@ Bạn có chắc muốn tiếp tục không?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Chế độ root yêu cầu APK gốc phải được cài đặt trên thiết bị trước khi vá</string>
     <string name="root_gmscore_excluded">Chế độ root không cần bản vá \'GmsCore support\'</string>
+    <string name="root_pre_patch_installer_title">Chọn phương thức cài đặt</string>
+    <string name="root_pre_patch_installer_description">Thiết bị của bạn có quyền truy cập gốc. Chọn cách cài đặt ứng dụng đã sửa đổi</string>
+    <string name="root_pre_patch_installer_mount_title">Gắn APK đã sửa đổi lên ứng dụng gốc</string>
+    <string name="root_pre_patch_installer_mount_description">Gắn APK đã sửa đổi lên ứng dụng gốc. Không cần GmsCore</string>
+    <string name="root_pre_patch_installer_standard_title">Cài đặt tiêu chuẩn</string>
+    <string name="root_pre_patch_installer_standard_description">Cài đặt dưới dạng ứng dụng riêng biệt với hỗ trợ GmsCore. Chọn trình cài đặt (Trình cài đặt hệ thống, Shizuku, v.v.) sau khi sửa đổi</string>
+    <string name="root_pre_patch_installer_hint">Phương pháp cài đặt xác định các patches được bao gồm và không thể thay đổi sau khi sửa đổi</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Đã sao chép lỗi vào bảng nhớ tạm</string>
     <string name="patcher_error_log">Nhật ký lỗi</string>
@@ -279,9 +285,10 @@ Bạn có chắc muốn tiếp tục không?"</string>
     <string name="settings_appearance_system">Hệ thống</string>
     <string name="settings_appearance_light">Sáng</string>
     <string name="settings_appearance_dark">Tối</string>
-    <string name="settings_appearance_black">Đen</string>
     <string name="settings_appearance_dynamic">Cá nhân hóa</string>
     <string name="settings_appearance_accent_color">Màu nổi bật</string>
+    <string name="settings_appearance_pure_black">Đen tuyền</string>
+    <string name="settings_appearance_pure_black_description">Sử dụng nền đen thuần cho màn hình OLED</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Ngôn ngữ</string>
     <string name="settings_appearance_app_language_current">Ngôn ngữ hiện tại</string>

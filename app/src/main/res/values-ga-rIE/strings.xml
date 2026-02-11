@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Cumhachtaithe ag caiféin agus paistí maithe</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Foinsí paiste</string>
-    <string name="sources_management_subtitle">%d foinsí instálaithe</string>
     <string name="sources_management_open_in_browser">Oscail sa bhrabhsálaí</string>
     <string name="sources_management_failed_to_open_url">Teip ar URL a oscailt</string>
     <string name="sources_management_date_added">Cuireadh leis</string>
@@ -160,12 +159,10 @@ An bhfuil tú cinnte gur mian leat dul ar aghaidh?"</string>
     <string name="home_app_info_delete_item_patched_apk">Comhad APK ghearrtha</string>
     <string name="home_app_info_delete_item_original_apk">Comhad APK bunaidh</string>
     <string name="home_app_info_delete_preservation_note">Coinneofar do rogha paiste agus roghanna le haghaidh paistí amach anseo</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Tugadh amach %d seachadán atá bréagach ó roghhnú faoi seach</string>
     <string name="home_app_info_patches_name_default">Paistí</string>
     <string name="home_app_info_patches_name_fallback">Gan ainm</string>
     <string name="home_app_info_patches_replace_fail">Theip ar phaistí a iompórtáil: %s</string>
     <string name="home_app_info_repatch_no_original_apk">APK bunaidh gan teacht air. Ní féidir an aip seo a athphaisteáil</string>
-    <string name="home_app_info_repatch_requires_original">Éilíonn an Repatch an comhad APK bunaidh</string>
     <string name="home_app_info_original_package_name">Ainm an phacáiste bhunaidh</string>
     <string name="home_app_info_applied_patches">Paistí curtha i bhfeidhm</string>
     <string name="home_app_info_patch_source_used">Foinse paiste a úsáideadh</string>
@@ -180,6 +177,12 @@ An bhfuil tú cinnte gur mian leat dul ar aghaidh?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Éilíonn mód fréimhe go mbeidh an APK bunaidh suiteáilte ar do ghléas sula ndéantar paisteáil</string>
     <string name="root_gmscore_excluded">Tá paiste tacaíochta GmsCore eiscthe i mód fréimhe</string>
+    <string name="root_pre_patch_installer_description">Tá aistriúchán ar an gcuide seo. Tairgf an modh tairgfí seo an t-airgead atá déanta agat.</string>
+    <string name="root_pre_patch_installer_mount_title">Tairgf</string>
+    <string name="root_pre_patch_installer_mount_description">Tairgf an t-airgead atá déanta agat.</string>
+    <string name="root_pre_patch_installer_standard_title">Tairgf an t-airgead atá déanta agat.</string>
+    <string name="root_pre_patch_installer_standard_description">Tairgf an t-airgead atá déanta agat.</string>
+    <string name="root_pre_patch_installer_hint">Tairgf an t-airgead atá déanta agat.</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Earráid cóipeáilte chuig gearrthaisce</string>
     <string name="patcher_error_log">Log earráide</string>
@@ -279,9 +282,10 @@ An bhfuil tú cinnte gur mian leat dul ar aghaidh?"</string>
     <string name="settings_appearance_system">Sistema</string>
     <string name="settings_appearance_light">Leicht</string>
     <string name="settings_appearance_dark">Dáark</string>
-    <string name="settings_appearance_black">Bunaidh</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Gnáth</string>
+    <string name="settings_appearance_pure_black">Dubh</string>
+    <string name="settings_appearance_pure_black_description">Tairgf an t-airgead atá déanta agat.</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Teanga aip</string>
     <string name="settings_appearance_app_language_current">Teanga reatha</string>

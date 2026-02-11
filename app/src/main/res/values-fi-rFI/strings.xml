@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Voimanamme kofeiini ja hyvät päivitykset</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Tukemisen lähteet</string>
-    <string name="sources_management_subtitle">%d lähdettä asennettu</string>
     <string name="sources_management_open_in_browser">Avaa linkit selaimessa</string>
     <string name="sources_management_failed_to_open_url">Ei toimi linkin avaamis</string>
     <string name="sources_management_date_added">Lisätty</string>
@@ -78,6 +77,8 @@ Sovittuvien versioiden:"</string>
     <string name="home_apk_availability_unpatched_label">Ei korjattuja</string>
     <string name="home_apk_availability_yes">Kyllä, minulla on se</string>
     <string name="home_apk_availability_no">Ei, auta minua löytämään se</string>
+    <string name="home_apk_use_saved_with_version">Käytä tallennettua APK:tä (v%s)</string>
+    <string name="home_app_info_no_saved_apk">Ei tallennettua APK:tä. Patching vaatii APK-tiedoston uudelleenvalinnan</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Lataa alkuperäinen APK</string>
     <string name="home_download_instructions_steps_title">Ohjeet:</string>
@@ -160,12 +161,10 @@ Oletko varma, että haluat jatkaa?"</string>
     <string name="home_app_info_delete_item_patched_apk">Korjattu APK-tiedosto</string>
     <string name="home_app_info_delete_item_original_apk">Alkuperäinen APK-tiedosto</string>
     <string name="home_app_info_delete_preservation_note">Sovelluksesi korjausvalinnat ja asetukset säilytetään tulevaisuuden korjaukseen</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Poistettiin tallennetusta valinnosta %d vanhentuneita korjauspäivityksiä</string>
     <string name="home_app_info_patches_name_default">Patches</string>
     <string name="home_app_info_patches_name_fallback">Ei-nimeltä</string>
     <string name="home_app_info_patches_replace_fail">Ei saatu tuoda patches: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Alkuperäistä APK-tiedostoa ei löytynyt. Ei voida korjastaa tätä sovellusta.</string>
-    <string name="home_app_info_repatch_requires_original">Repatch vaatii alkuperäisen APK-tiedoston</string>
     <string name="home_app_info_original_package_name">Alkuperäinen paketin nimi</string>
     <string name="home_app_info_applied_patches">Käytetyit patches</string>
     <string name="home_app_info_patch_source_used">Käytettyä patch-koodia</string>
@@ -180,6 +179,13 @@ Oletko varma, että haluat jatkaa?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Juurtimemoodi vaatii alkuperäisen APK-tiedoston asennuksen laitteellesi ennen korjausta.</string>
     <string name="root_gmscore_excluded">GmsCore-tukikorjaus on poissuljettu juuritilassa</string>
+    <string name="root_pre_patch_installer_title">Valitse asennusmenetelmä</string>
+    <string name="root_pre_patch_installer_description">Laitteellesi on juuriasetus. Valitse, miten haluat asentaa korjattua sovellusta.</string>
+    <string name="root_pre_patch_installer_mount_title">Root Mount</string>
+    <string name="root_pre_patch_installer_mount_description">Asenna korjattu APK varustettuna sovelluksena. Ei tarvita GmsCoreä.</string>
+    <string name="root_pre_patch_installer_standard_title">Perusasennus</string>
+    <string name="root_pre_patch_installer_standard_description">Asenna erillisenä sovelluksena GmsCore-tukiin. Valitse asennin (järjestelmän asennin, Shizuku, jne.) korjauksen jälkeen.</string>
+    <string name="root_pre_patch_installer_hint">Asennusmenetelmä määrää, minkälaisten korjaukset sisällytään ja sitä ei voi muuttaa korjauksen jälkeen.</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Virhe kopioitu leikepöydälle</string>
     <string name="patcher_error_log">Virhekirjoitus</string>
@@ -279,9 +285,10 @@ Oletko varma, että haluat jatkaa?"</string>
     <string name="settings_appearance_system">Järjestelmä</string>
     <string name="settings_appearance_light">Valko</string>
     <string name="settings_appearance_dark">Musta</string>
-    <string name="settings_appearance_black">Mustavalko</string>
     <string name="settings_appearance_dynamic">Materiaalinen sinetinäyttö</string>
     <string name="settings_appearance_accent_color">Kulmaväri</string>
+    <string name="settings_appearance_pure_black">Puroa musta</string>
+    <string name="settings_appearance_pure_black_description">Käytä todellisia mustia taustoja OLED-näytöissä.</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Sovelluksen kieli</string>
     <string name="settings_appearance_app_language_current">Nykyinen kieli</string>

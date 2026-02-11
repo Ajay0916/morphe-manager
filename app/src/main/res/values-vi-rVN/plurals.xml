@@ -18,4 +18,10 @@
     <plurals name="sources_dialog_enabled_toast">
         <item quantity="other">Đã kích hoạt %d nguồn</item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="other">Đã loại bỏ %1$d bản vá lỗi thời khỏi danh sách bản vá đã chọn</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="other">Đã cài đặt %1$d nguồn</item>
+    </plurals>
 </resources>

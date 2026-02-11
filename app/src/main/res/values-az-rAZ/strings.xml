@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Kofein və yaxşı yamalar ilə gücləndirilib</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Yamaq mənbələri</string>
-    <string name="sources_management_subtitle">%d mənbə quraşdırılıb</string>
     <string name="sources_management_open_in_browser">Brauzerdə açın</string>
     <string name="sources_management_failed_to_open_url">URL açmaq uğursuzdu</string>
     <string name="sources_management_date_added">Əlavə edildi</string>
@@ -164,7 +163,6 @@ Davam etmək istədiyinizə əminsiniz?"</string>
     <string name="home_app_info_patches_name_fallback">Adlandırılmayan</string>
     <string name="home_app_info_patches_replace_fail">Yamaqlar idxalı uğursuz: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Əsil APK tapılmadı. Bu tətbiqi təkrar yamaqlamaq mümkün deyil</string>
-    <string name="home_app_info_repatch_requires_original">Təkrar yamaqlanma əsil APK faylın tələb edir</string>
     <string name="home_app_info_original_package_name">Əsil paket adı</string>
     <string name="home_app_info_applied_patches">Tətbiq olunan yamaqlar</string>
     <string name="home_app_info_patch_source_used">İşlədilən yamaq mənbəsi</string>
@@ -269,7 +267,6 @@ Davam etmək istədiyinizə əminsiniz?"</string>
     <string name="settings_appearance_system">Sistem</string>
     <string name="settings_appearance_light">İşıqlı</string>
     <string name="settings_appearance_dark">Qaranlıq</string>
-    <string name="settings_appearance_black">Qara</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Çalar rəngi</string>
     <!-- Settings - Appearance Tab - Language Selector -->

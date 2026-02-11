@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Alimentado por cafeína e bons patches</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Fontes de emenda</string>
-    <string name="sources_management_subtitle">%d fontes instaladas</string>
     <string name="sources_management_open_in_browser">Abrir links no navegador</string>
     <string name="sources_management_failed_to_open_url">Falha ao abrir URL</string>
     <string name="sources_management_date_added">Adicionado</string>
@@ -78,6 +77,8 @@ Versões compatíveis:"</string>
     <string name="home_apk_availability_unpatched_label">Não atualizado</string>
     <string name="home_apk_availability_yes">Sim, eu tenho</string>
     <string name="home_apk_availability_no">Não, ajude-me a encontrá-lo</string>
+    <string name="home_apk_use_saved_with_version">Usar APK salvo (v%s)</string>
+    <string name="home_app_info_no_saved_apk">Não há APK salvo. O patch exigirá a seleção do arquivo APK novamente</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Baixar o APK original</string>
     <string name="home_download_instructions_steps_title">Instruções:</string>
@@ -160,12 +161,10 @@ Você tem certeza de que deseja continuar?"</string>
     <string name="home_app_info_delete_item_patched_apk">Arquivo APK emendado</string>
     <string name="home_app_info_delete_item_original_apk">Arquivo APK original</string>
     <string name="home_app_info_delete_preservation_note">Sua seleção de emenda e opções serão preservadas para futuras emendas</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Removidos %d patches desatualizados da seleção salva</string>
     <string name="home_app_info_patches_name_default">Patches</string>
     <string name="home_app_info_patches_name_fallback">Sem nome</string>
     <string name="home_app_info_patches_replace_fail">Falha ao importar patches: %s</string>
     <string name="home_app_info_repatch_no_original_apk">APK original não encontrado. Não é possível repatchar este aplicativo.</string>
-    <string name="home_app_info_repatch_requires_original">Repatch requer o arquivo APK original</string>
     <string name="home_app_info_original_package_name">Nome do pacote original</string>
     <string name="home_app_info_applied_patches">Patches aplicados</string>
     <string name="home_app_info_patch_source_used">Fonte do patch usada</string>
@@ -180,6 +179,13 @@ Você tem certeza de que deseja continuar?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">O modo raiz requer que o APK original esteja instalado em seu dispositivo antes do patch.</string>
     <string name="root_gmscore_excluded">O patch de suporte GmsCore está excluído no modo root</string>
+    <string name="root_pre_patch_installer_title">Escolher método de instalação</string>
+    <string name="root_pre_patch_installer_description">Seu dispositivo tem acesso root. Escolha como deseja instalar o aplicativo corrigido.</string>
+    <string name="root_pre_patch_installer_mount_title">Montagem Root</string>
+    <string name="root_pre_patch_installer_mount_description">Montar APK corrigido sobre o aplicativo de estoque. Nenhum GmsCore necessário</string>
+    <string name="root_pre_patch_installer_standard_title">Instalação Padrão</string>
+    <string name="root_pre_patch_installer_standard_description">Instale como um aplicativo separado com suporte a GmsCore. Escolha o instalador (Instalador do sistema, Shizuku, etc.) após a correção</string>
+    <string name="root_pre_patch_installer_hint">O método de instalação determina quais correções são incluídas e não pode ser alterado após a correção</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Erro copiado para a área de transferência</string>
     <string name="patcher_error_log">Log de erros</string>
@@ -279,9 +285,10 @@ Você tem certeza de que deseja continuar?"</string>
     <string name="settings_appearance_system">Sistema</string>
     <string name="settings_appearance_light">Claro</string>
     <string name="settings_appearance_dark">Escuro</string>
-    <string name="settings_appearance_black">Preto</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Cor de destaque</string>
+    <string name="settings_appearance_pure_black">Preto Puro</string>
+    <string name="settings_appearance_pure_black_description">Use fundos pretos verdadeiros para displays OLED</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Idioma da aplicação</string>
     <string name="settings_appearance_app_language_current">Língua atual</string>

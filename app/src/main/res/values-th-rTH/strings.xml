@@ -41,7 +41,6 @@
     <string name="home_greeting_10">สนับสนุนโดยกาแฟหนึ่งแก้วกับแพตซ์ที่มีคุณภาพ</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">จัดการแหล่งข้อมูล</string>
-    <string name="sources_management_subtitle">%d แหล่งข้อมูลถูกติดตั้งแล้ว</string>
     <string name="sources_management_open_in_browser">เปิดในเบราว์เซอร์</string>
     <string name="sources_management_failed_to_open_url">ไม่สามารถเปิด URL ได้</string>
     <string name="sources_management_date_added">เพิ่มเข้ามาแล้ว</string>
@@ -79,6 +78,8 @@
     <string name="home_apk_availability_unpatched_label">ไม่ได้แพตซ์</string>
     <string name="home_apk_availability_yes">ใช่ ฉันมีมัน</string>
     <string name="home_apk_availability_no">ไม่ ช่วยฉันหา</string>
+    <string name="home_apk_use_saved_with_version">ใช้ APK ที่ถูกบันทึก (เวอร์ชัน %s)</string>
+    <string name="home_app_info_no_saved_apk">ไม่มี APK ที่ถูกบันทึก. การปรับปรุงจะต้องเลือกไฟล์ APK อีกครั้ง</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">ดาวน์โหลด APK ดังเดิม</string>
     <string name="home_download_instructions_steps_title">คำแนะนำ:</string>
@@ -161,12 +162,10 @@
     <string name="home_app_info_delete_item_patched_apk">ไฟล์ APK ที่แก้ไขแล้ว</string>
     <string name="home_app_info_delete_item_original_apk">ไฟล์ APK รุ่นต้นฉบับ</string>
     <string name="home_app_info_delete_preservation_note">แพตซ์ที่คุณเลือกไว้และการตั้งค่าของคุณจะถูกเก็บไว้สำหรับการแก้ไขในอนาคต</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">ลบ %d ปัญหาเก่าไปจากการเลือกที่ถูกบันทึก</string>
     <string name="home_app_info_patches_name_default">แพตช์</string>
     <string name="home_app_info_patches_name_fallback">ไม่มีชื่อ</string>
     <string name="home_app_info_patches_replace_fail">ไม่สามารถนำเข้าแพตช์: %s</string>
     <string name="home_app_info_repatch_no_original_apk">ไม่พบ APK รุ่นต้นฉบับ. ไม่สามารถปรับแก้แอปนี้ได้อีก</string>
-    <string name="home_app_info_repatch_requires_original">นำพัท์แอปต้องมีไฟล์ APK แบบต้น</string>
     <string name="home_app_info_original_package_name">ชื่อแพ็กเกจดังเดิม</string>
     <string name="home_app_info_applied_patches">แพตช์ที่ถูกนำพัท์</string>
     <string name="home_app_info_patch_source_used">ใช้ซอร์สปัทช์</string>
@@ -181,6 +180,13 @@
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">โหมดรากรูตต้องมี APK รุ่นต้นฉบับติดตั้งบนอุปกรณ์ของคุณก่อนปรับแก้</string>
     <string name="root_gmscore_excluded">การรองรับ GmsCore ถูกยกเว้นในโหมด Root</string>
+    <string name="root_pre_patch_installer_title">เลือกวิธีการติดตั้ง</string>
+    <string name="root_pre_patch_installer_description">อุปกรณ์ของคุณมีสิทธิ์รูท. เลือกวิธีที่คุณต้องการติดตั้งแอปพลิเคชันที่แก้ไขแล้ว</string>
+    <string name="root_pre_patch_installer_mount_title">Root Mount</string>
+    <string name="root_pre_patch_installer_mount_description">ติดตั้ง APK แก้ไขเหนือแอปพลิเคชันสต็อก. ไม่จำเป็นต้องมี GmsCore</string>
+    <string name="root_pre_patch_installer_standard_title">ติดตั้งมาตรฐาน</string>
+    <string name="root_pre_patch_installer_standard_description">ติดตั้งเป็นแอปพลิเคชันแยกต่างหากกับการสนับสนุน GmsCore. เลือกตัวติดตั้ง (ตัวติดตั้งระบบ, Shizuku, ฯลฯ) หลังจากแก้ไข</string>
+    <string name="root_pre_patch_installer_hint">วิธีการติดตั้งกำหนดว่าประเภทไหนของการแก้ไขจะรวมอยู่และไม่สามารถเปลี่ยนได้หลังจากแก้ไขแล้ว</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">คัดลอกข้อผิดพลาดไปยังคลิปบอร์ดแล้ว</string>
     <string name="patcher_error_log">บันทึกข้อผิดพลาด</string>
@@ -280,9 +286,10 @@
     <string name="settings_appearance_system">เบา</string>
     <string name="settings_appearance_light">ดำม</string>
     <string name="settings_appearance_dark">ดำม</string>
-    <string name="settings_appearance_black">ดำม You</string>
     <string name="settings_appearance_dynamic">สีเส้น</string>
     <string name="settings_appearance_accent_color">สีโฆษณา</string>
+    <string name="settings_appearance_pure_black">ดำสีบริสุทธิ์</string>
+    <string name="settings_appearance_pure_black_description">ใช้พื้นหลังสีดำจริงสำหรับหน้าจอ OLED</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">ภาษาของแอป</string>
     <string name="settings_appearance_app_language_current">ภาษาที่ใช้อยู่</string>

@@ -40,7 +40,6 @@
     <string name="home_greeting_10">На каві та хороших оновленнях</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Джерела патчів</string>
-    <string name="sources_management_subtitle">%d джерел встановлено</string>
     <string name="sources_management_open_in_browser">Відкрити в браузері</string>
     <string name="sources_management_failed_to_open_url">Не вдалося відкрити URL</string>
     <string name="sources_management_date_added">Додано</string>
@@ -78,6 +77,8 @@
     <string name="home_apk_availability_unpatched_label">Непатчена</string>
     <string name="home_apk_availability_yes">Так, у мене є</string>
     <string name="home_apk_availability_no">Ні, допоможіть мені його знайти</string>
+    <string name="home_apk_use_saved_with_version">Збережений APK (v%s)</string>
+    <string name="home_app_info_no_saved_apk">Немає збереженого APK файлу. Для патчінгу потрібно буде знову вибрати APK файл</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Завантажити оригінальний APK файл</string>
     <string name="home_download_instructions_steps_title">Інструкції:</string>
@@ -160,12 +161,10 @@
     <string name="home_app_info_delete_item_patched_apk">Патчений APK файл</string>
     <string name="home_app_info_delete_item_original_apk">Оригінальний APK файл</string>
     <string name="home_app_info_delete_preservation_note">Вибрані вами патчі та параметри будуть збережені для майбутнього патчінгу</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Видалено %d застарілих патчів зі збереженого вибору</string>
     <string name="home_app_info_patches_name_default">Патчі</string>
     <string name="home_app_info_patches_name_fallback">Без назви</string>
     <string name="home_app_info_patches_replace_fail">Не вдалося імпортувати патчі: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Оригінальний APK файл не знайдено. Неможливо перепатчити цей застосунок</string>
-    <string name="home_app_info_repatch_requires_original">Для перепатчінгу потрібен оригінальний APK файл</string>
     <string name="home_app_info_original_package_name">Оригінальна назва пакета</string>
     <string name="home_app_info_applied_patches">Застосовані патчі</string>
     <string name="home_app_info_patch_source_used">Використано джерело патчів</string>
@@ -180,6 +179,13 @@
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Режим root вимагає, щоб оригінальний APK файл був встановлений на вашому пристрої перед патчінгом</string>
     <string name="root_gmscore_excluded">Патч підтримки GmsCore виключено у режимі root</string>
+    <string name="root_pre_patch_installer_title">Виберіть спосіб встановлення</string>
+    <string name="root_pre_patch_installer_description">Ваш пристрій має root-доступ. Виберіть, як ви хочете встановити патчений застосунок</string>
+    <string name="root_pre_patch_installer_mount_title">Root монтування</string>
+    <string name="root_pre_patch_installer_mount_description">Монтувати патчений APK файл поверх стандартного застосунку. GmsCore не потрібен</string>
+    <string name="root_pre_patch_installer_standard_title">Стандартне встановлення</string>
+    <string name="root_pre_patch_installer_standard_description">Встановити як окремий застосунок з підтримкою GmsCore. Виберіть інсталятор (Системний інсталятор, Shizuku тощо) після патчінгу</string>
+    <string name="root_pre_patch_installer_hint">Спосіб встановлення визначає, які патчі включено та які не можна змінити після патчінгу</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Помилку скопійовано у буфер обміну</string>
     <string name="patcher_error_log">Журнал помилок</string>
@@ -279,9 +285,10 @@
     <string name="settings_appearance_system">Системна</string>
     <string name="settings_appearance_light">Світла</string>
     <string name="settings_appearance_dark">Темна</string>
-    <string name="settings_appearance_black">Чорна</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Акцентний колір</string>
+    <string name="settings_appearance_pure_black">Повністю чорний</string>
+    <string name="settings_appearance_pure_black_description">Використовує справжній чорний фон для OLED дисплеїв</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Мова застосунку</string>
     <string name="settings_appearance_app_language_current">Поточна мова</string>

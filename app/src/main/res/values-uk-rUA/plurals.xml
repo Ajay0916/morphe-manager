@@ -36,4 +36,16 @@
         <item quantity="many">Увімкнено %d джерел</item>
         <item quantity="other">Увімкнено %d джерел</item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="one">Видалено %1$d застарілий патч зі збереженого вибору</item>
+        <item quantity="few">Видалено %1$d застарілих патчів зі збереженого вибору</item>
+        <item quantity="many">Видалено %1$d застарілих патчів зі збереженого вибору</item>
+        <item quantity="other">Видалено %1$d застарілих патчів зі збереженого вибору</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="one">%1$d джерело встановлено</item>
+        <item quantity="few">%1$d джерел встановлено</item>
+        <item quantity="many">%1$d джерел встановлено</item>
+        <item quantity="other">%1$d джерел встановлено</item>
+    </plurals>
 </resources>

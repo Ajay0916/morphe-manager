@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Работаем на кофеине и хороших патчах</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Источники патчей</string>
-    <string name="sources_management_subtitle">%d источник установлен</string>
     <string name="sources_management_open_in_browser">Открыть в браузере</string>
     <string name="sources_management_failed_to_open_url">Не удалось открыть URL</string>
     <string name="sources_management_date_added">Добавлено</string>
@@ -78,6 +77,8 @@
     <string name="home_apk_availability_unpatched_label">Непатченый</string>
     <string name="home_apk_availability_yes">Да, у меня есть</string>
     <string name="home_apk_availability_no">Нет, помогите мне найти</string>
+    <string name="home_apk_use_saved_with_version">Использовать сохранённый APK (версия %s)</string>
+    <string name="home_app_info_no_saved_apk">Нет сохранённого APK. Патчинг потребует повторного выбора файла APK</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Загрузить оригинальный APK</string>
     <string name="home_download_instructions_steps_title">Инструкции:</string>
@@ -160,12 +161,10 @@
     <string name="home_app_info_delete_item_patched_apk">Патченный APK файл</string>
     <string name="home_app_info_delete_item_original_apk">Оригинальный APK файл</string>
     <string name="home_app_info_delete_preservation_note">Выбранные патчи и параметры будут сохранены для будущего патчинга</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Удалено %d устаревших патчей из сохраненного выбора</string>
     <string name="home_app_info_patches_name_default">Патчи</string>
     <string name="home_app_info_patches_name_fallback">Безымянный</string>
     <string name="home_app_info_patches_replace_fail">Не удалось импортировать патчи: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Оригинальный APK не найден. Не удалось перепаковать это приложение</string>
-    <string name="home_app_info_repatch_requires_original">Повторить патчи требует оригинального файла APK</string>
     <string name="home_app_info_original_package_name">Исходное имя пакета</string>
     <string name="home_app_info_applied_patches">Примененные патчи</string>
     <string name="home_app_info_patch_source_used">Использован источник патчей</string>
@@ -180,6 +179,13 @@
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Root режим требует установленный непатченный APK перед установкой патчей</string>
     <string name="root_gmscore_excluded">Поддержка GmsCore отключена в режиме root</string>
+    <string name="root_pre_patch_installer_title">Выберите метод установки</string>
+    <string name="root_pre_patch_installer_description">У вас есть доступ к корню устройства. Выберите, как вы хотите установить исправленное приложение</string>
+    <string name="root_pre_patch_installer_mount_title">Монтирование Root</string>
+    <string name="root_pre_patch_installer_mount_description">Монтировать исправленный APK поверх стандартного приложения. Не нужен GmsCore</string>
+    <string name="root_pre_patch_installer_standard_title">Стандартная установка</string>
+    <string name="root_pre_patch_installer_standard_description">Установить как отдельное приложение с поддержкой GmsCore. Выберите установщик (Системный установщик, Shizuku и т.д.) после исправления</string>
+    <string name="root_pre_patch_installer_hint">Метод установки определяет, какие исправления включены и не может быть изменен после исправления</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Ошибка скопирована в буфер обмена</string>
     <string name="patcher_error_log">Журнал ошибок</string>
@@ -279,9 +285,10 @@
     <string name="settings_appearance_system">Системная</string>
     <string name="settings_appearance_light">Светлая</string>
     <string name="settings_appearance_dark">Тёмная</string>
-    <string name="settings_appearance_black">Чёрная</string>
     <string name="settings_appearance_dynamic">Материальное «Вы»</string>
     <string name="settings_appearance_accent_color">Цвет акцента</string>
+    <string name="settings_appearance_pure_black">Чистый черный</string>
+    <string name="settings_appearance_pure_black_description">Использовать настоящий черный фон для дисплеев OLED</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Язык приложения YouTube</string>
     <string name="settings_appearance_app_language_current">Текущий язык</string>

@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Impulsado por cafeína y buenos parches</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Fuentes de parches</string>
-    <string name="sources_management_subtitle">%d fuentes instaladas</string>
     <string name="sources_management_open_in_browser">Abrir en el navegador</string>
     <string name="sources_management_failed_to_open_url">No se pudo abrir la URL</string>
     <string name="sources_management_date_added">Agregado</string>
@@ -78,6 +77,8 @@ Versiones compatibles:"</string>
     <string name="home_apk_availability_unpatched_label">No parcheado</string>
     <string name="home_apk_availability_yes">Sí, la tengo</string>
     <string name="home_apk_availability_no">No, ayúdame a encontrarla</string>
+    <string name="home_apk_use_saved_with_version">Usar APK guardado (v%s)</string>
+    <string name="home_app_info_no_saved_apk">No hay APK guardado. Para aplicar los parches será necesario seleccionar el archivo APK nuevamente.</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">APKDescarga el APK original</string>
     <string name="home_download_instructions_steps_title">Instrucciones:</string>
@@ -160,12 +161,10 @@ Versiones compatibles:"</string>
     <string name="home_app_info_delete_item_patched_apk">Archivo APK parcheado</string>
     <string name="home_app_info_delete_item_original_apk">Archivo APK original</string>
     <string name="home_app_info_delete_preservation_note">Tu selección de parches y opciones se conservarán para futuros parcheos</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Eliminado %d parche obsoleto de la selección guardada</string>
     <string name="home_app_info_patches_name_default">Parches</string>
     <string name="home_app_info_patches_name_fallback">Sin nombre</string>
     <string name="home_app_info_patches_replace_fail">No se pudieron importar los parches: %s</string>
     <string name="home_app_info_repatch_no_original_apk">APK original no encontrado. No se puede volver a parchear esta aplicación</string>
-    <string name="home_app_info_repatch_requires_original">Volver a parchear requiere el archivo APK original</string>
     <string name="home_app_info_original_package_name">Nombre del paquete original</string>
     <string name="home_app_info_applied_patches">Parches aplicados</string>
     <string name="home_app_info_patch_source_used">Fuente de parches utilizada</string>
@@ -180,6 +179,13 @@ Versiones compatibles:"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">El modo raíz requiere que el APK original esté instalado en tu dispositivo antes de aplicar parches.</string>
     <string name="root_gmscore_excluded">El parche de soporte de GmsCore está excluido en el modo raíz</string>
+    <string name="root_pre_patch_installer_title">Elegir método de instalación</string>
+    <string name="root_pre_patch_installer_description">Su dispositivo tiene acceso root. Elija cómo quiere instalar la aplicación parcheada.</string>
+    <string name="root_pre_patch_installer_mount_title">Montaje de root</string>
+    <string name="root_pre_patch_installer_mount_description">Montar el APK parcheado sobre la aplicación original. No se necesita GmsCore</string>
+    <string name="root_pre_patch_installer_standard_title">Instalación estándar</string>
+    <string name="root_pre_patch_installer_standard_description">Instalar como una aplicación separada con soporte de GmsCore. Elija el instalador (instalador del sistema, Shizuku, etc.) después de parchear</string>
+    <string name="root_pre_patch_installer_hint">El método de instalación determina qué parches se incluyen y no se puede cambiar después de parchear</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Error copiado en el portapapeles</string>
     <string name="patcher_error_log">Registro de errores</string>
@@ -279,9 +285,10 @@ Versiones compatibles:"</string>
     <string name="settings_appearance_system">Sistema</string>
     <string name="settings_appearance_light">Claro</string>
     <string name="settings_appearance_dark">Oscuro</string>
-    <string name="settings_appearance_black">Negro</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Color de acento</string>
+    <string name="settings_appearance_pure_black">Negro puro</string>
+    <string name="settings_appearance_pure_black_description">Usar fondos negros verdaderos para pantallas OLED</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Idioma de la aplicación</string>
     <string name="settings_appearance_app_language_current">Idioma actual</string>

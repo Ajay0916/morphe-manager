@@ -18,4 +18,10 @@
     <plurals name="sources_dialog_enabled_toast">
         <item quantity="other">已啟用 %d 個來源</item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="other">已移除儲存選擇中的 %1$d 個過舊修補</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="other">%1$d 个源已安装</item>
+    </plurals>
 </resources>

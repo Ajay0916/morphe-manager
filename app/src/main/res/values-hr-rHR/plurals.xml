@@ -30,4 +30,14 @@
         <item quantity="few">Omogućen %d izvor</item>
         <item quantity="other">%d izvora omogućeno </item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="one">Uklonjeno %1$d zastarjeo zakrpa iz spremljenog odabira</item>
+        <item quantity="few">Uklonjeno %1$d zastarjelih zakrpa iz spremljenog odabira</item>
+        <item quantity="other">Uklonjeno %1$d zastarjelih zakrpa iz spremljenog odabira</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="one">%1$d izvor instalirano</item>
+        <item quantity="few">%1$d izvora instalirano</item>
+        <item quantity="other">%1$d izvora instalirano</item>
+    </plurals>
 </resources>

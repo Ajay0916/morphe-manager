@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Aangedreven door cafeïne en goede patches</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Patchbronnen</string>
-    <string name="sources_management_subtitle">%d bronnen geïnstalleerd</string>
     <string name="sources_management_open_in_browser">Openen in browser</string>
     <string name="sources_management_failed_to_open_url">Kan URL niet openen</string>
     <string name="sources_management_date_added">Toegevoegd</string>
@@ -78,6 +77,8 @@ Compatibele versies:"</string>
     <string name="home_apk_availability_unpatched_label">Ongepatcht</string>
     <string name="home_apk_availability_yes">Ja, die heb ik</string>
     <string name="home_apk_availability_no">Nee, help me die te vinden</string>
+    <string name="home_apk_use_saved_with_version">Gebruik opgeslagen APK (v%s)</string>
+    <string name="home_app_info_no_saved_apk">Geen opgeslagen APK. Patching zal het selecteren van het APK-bestand opnieuw vereisen</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Download de originele APK</string>
     <string name="home_download_instructions_steps_title">Instructies:</string>
@@ -160,12 +161,10 @@ Wilt u toch doorgaan?"</string>
     <string name="home_app_info_delete_item_patched_apk">Gepatcht APK-bestand</string>
     <string name="home_app_info_delete_item_original_apk">Origineel APK-bestand</string>
     <string name="home_app_info_delete_preservation_note">Uw patch-keuze en opties worden bewaard voor toekomstig patchen</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Verwijderd %d verouderde patches uit geselecteerde opslag</string>
     <string name="home_app_info_patches_name_default">Patches</string>
     <string name="home_app_info_patches_name_fallback">Naamloos</string>
     <string name="home_app_info_patches_replace_fail">Kan patches niet importeren: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Originele APK niet gevonden. Kan deze app niet opnieuw patchen</string>
-    <string name="home_app_info_repatch_requires_original">Repatch vereist de originele APK-bestand</string>
     <string name="home_app_info_original_package_name">Originele pakketnaam</string>
     <string name="home_app_info_applied_patches">Toegepaste patches</string>
     <string name="home_app_info_patch_source_used">Gebruikte bronpatch</string>
@@ -180,6 +179,13 @@ Wilt u toch doorgaan?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Root-modus vereist dat de oorspronkelijke APK op uw apparaat geïnstalleerd is voordat gepatcht wordt</string>
     <string name="root_gmscore_excluded">GmsCore-ondersteuningspatch is uitgesloten in rootmodus</string>
+    <string name="root_pre_patch_installer_title">Kies installatiemethode</string>
+    <string name="root_pre_patch_installer_description">Uw apparaten heeft root-toegang. Kies hoe u de gepatchte app wilt installeren.</string>
+    <string name="root_pre_patch_installer_mount_title">Root Mount</string>
+    <string name="root_pre_patch_installer_mount_description">Mount gepatchte APK bovenop de standaard app. Geen GmsCore nodig.</string>
+    <string name="root_pre_patch_installer_standard_title">Standaard Installatie</string>
+    <string name="root_pre_patch_installer_standard_description">Installeer als een apart app met GmsCore-ondersteuning. Kies de installer (Systeeminstaller, Shizuku, enz.) na het patchen.</string>
+    <string name="root_pre_patch_installer_hint">De installatiemethode bepaalt welke patches zijn opgenomen en kan niet worden gewijzigd na het patchen.</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Fout gekopieerd naar klembord</string>
     <string name="patcher_error_log">Foutenlog</string>
@@ -279,9 +285,10 @@ Wilt u toch doorgaan?"</string>
     <string name="settings_appearance_system">Systeem</string>
     <string name="settings_appearance_light">Licht</string>
     <string name="settings_appearance_dark">Donker</string>
-    <string name="settings_appearance_black">Zwart</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Accentkleur</string>
+    <string name="settings_appearance_pure_black">Puur Zwart</string>
+    <string name="settings_appearance_pure_black_description">Gebruik ware zwarte achtergronden voor OLED-schermen.</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">App-taal</string>
     <string name="settings_appearance_app_language_current">Huidige taal</string>

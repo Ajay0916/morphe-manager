@@ -40,7 +40,6 @@
     <string name="home_greeting_10">Kafein ve iyi yamalarla güçlendirilmiştir</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">Yama kaynakları</string>
-    <string name="sources_management_subtitle">%d kaynak yüklendi</string>
     <string name="sources_management_open_in_browser">Tarayıcıda aç</string>
     <string name="sources_management_failed_to_open_url">URL açılamadı</string>
     <string name="sources_management_date_added">Eklendi</string>
@@ -78,6 +77,8 @@
     <string name="home_apk_availability_unpatched_label">Yakınmıyan</string>
     <string name="home_apk_availability_yes">Evet, bende var</string>
     <string name="home_apk_availability_no">Hayır, bulmama yardım et</string>
+    <string name="home_apk_use_saved_with_version">Kayıtlı APK (v%s) kullanın</string>
+    <string name="home_app_info_no_saved_apk">Kayıtlı APK yok. Tespit için tekrar APK dosyası seçin</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">Orijinal APK\'i indir</string>
     <string name="home_download_instructions_steps_title">Talimatlar:</string>
@@ -160,12 +161,10 @@ Devam etmek istiyor musunuz?"</string>
     <string name="home_app_info_delete_item_patched_apk">Yama edilmiş APK dosyası</string>
     <string name="home_app_info_delete_item_original_apk">Orijinal APK dosyası</string>
     <string name="home_app_info_delete_preservation_note">Yama seçiminiz ve seçenekler gelecekteki yama için korunacak</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">Silinen %d seçenekten %d eskiye uygun işlem kaldırıldı</string>
     <string name="home_app_info_patches_name_default">Yamalar</string>
     <string name="home_app_info_patches_name_fallback">Adlandırılmamış</string>
     <string name="home_app_info_patches_replace_fail">Yamalar içe aktarılamadı: %s</string>
     <string name="home_app_info_repatch_no_original_apk">Orijinal APK bulunamadı. Bu uygulama tekrar yamalanamıyor</string>
-    <string name="home_app_info_repatch_requires_original">Yamalamak için orijinal APK dosyası gerekli</string>
     <string name="home_app_info_original_package_name">Orijinal paket adı</string>
     <string name="home_app_info_applied_patches">Uygulanan yamalar</string>
     <string name="home_app_info_patch_source_used">Kullanılan yama kaynağı</string>
@@ -180,6 +179,13 @@ Devam etmek istiyor musunuz?"</string>
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">Root modu, yamalama yapmadan önce orijinal APK\'in cihazınızda yüklü olmasını gerektirir</string>
     <string name="root_gmscore_excluded">GmsCore destek yaması root modunda hariç tutulmuştur</string>
+    <string name="root_pre_patch_installer_title">Yükleme yöntemini seçin</string>
+    <string name="root_pre_patch_installer_description">Cihazın kök erişimi vardır. Uygulamayı yedeklemek istediğiniz yolu seçin</string>
+    <string name="root_pre_patch_installer_mount_title">Kök Dağıtım</string>
+    <string name="root_pre_patch_installer_mount_description">Uygulamayı yedekli APK ile stok uygulaması üzerine monte edin. GmsCore gerektirmez</string>
+    <string name="root_pre_patch_installer_standard_title">Standart Kurulum</string>
+    <string name="root_pre_patch_installer_standard_description">GmsCore desteği olan ayrı bir uygulama olarak kurun. Yedekleme sonra kurucuyu seçin (Sistem kurucusu, Shizuku vb.)</string>
+    <string name="root_pre_patch_installer_hint">Kurulum yöntemi, hangi yedekler dahil edildiğini ve yedekleme sonrasında değiştirilememesi gerektiğini belirler</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">Hata panoya kopyalandı</string>
     <string name="patcher_error_log">Hata günlüğü</string>
@@ -279,9 +285,10 @@ Devam etmek istiyor musunuz?"</string>
     <string name="settings_appearance_system">Sistem</string>
     <string name="settings_appearance_light">Açık</string>
     <string name="settings_appearance_dark">Koyu</string>
-    <string name="settings_appearance_black">Siyah</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">Vurgu rengi</string>
+    <string name="settings_appearance_pure_black">Tam Siyah</string>
+    <string name="settings_appearance_pure_black_description">OLED ekranlar için gerçek siyah arkaplanlar kullanın</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">Uygulama dili</string>
     <string name="settings_appearance_app_language_current">Mevcut dil</string>
@@ -295,7 +302,7 @@ Devam etmek istiyor musunuz?"</string>
     <string name="settings_appearance_app_icon_dark_1">Okyanus</string>
     <string name="settings_appearance_app_icon_dark_2">Boşluk</string>
     <string name="settings_appearance_app_icon_dark_3">Çivit</string>
-    <string name="settings_appearance_app_icon_change_dialog_title">App simgesini değiştirmek istediğinizden emin misiniz?</string>
+    <string name="settings_appearance_app_icon_change_dialog_title">Uygulama simgesi değiştirilsin mi?</string>
     <string name="settings_appearance_app_icon_change_dialog_message">%1$s simgesine değiştirmek ve yeniden başlatmak istediğinizden emin misiniz?</string>
     <string name="settings_appearance_app_icon_change_dialog_confirm">Simgeyi değiştir</string>
     <!-- Settings - Advanced Tab - Updates Section -->

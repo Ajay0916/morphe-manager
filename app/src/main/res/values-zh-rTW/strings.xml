@@ -40,7 +40,6 @@
     <string name="home_greeting_10">由咖啡因和良好的修補驅動</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">修補來源</string>
-    <string name="sources_management_subtitle">已安裝 %d 個來源</string>
     <string name="sources_management_open_in_browser">在瀏覽器中開啟連結</string>
     <string name="sources_management_failed_to_open_url">無法開啟網址</string>
     <string name="sources_management_date_added">已新增</string>
@@ -78,6 +77,8 @@
     <string name="home_apk_availability_unpatched_label">未修補</string>
     <string name="home_apk_availability_yes">已持有</string>
     <string name="home_apk_availability_no">未持有，請幫忙尋找</string>
+    <string name="home_apk_use_saved_with_version">使用保存的 APK (v%s)</string>
+    <string name="home_app_info_no_saved_apk">没有保存的 APK。修补需要重新选择 APK 文件</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">下載原始 APK</string>
     <string name="home_download_instructions_steps_title">步驟如下：</string>
@@ -160,12 +161,10 @@
     <string name="home_app_info_delete_item_patched_apk">修補後的 APK 檔案</string>
     <string name="home_app_info_delete_item_original_apk">原始 APK 檔案</string>
     <string name="home_app_info_delete_preservation_note">你的修補選擇和選項將保留以供未來修補使用</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">已移除儲存選擇中的 %d 個過舊修補</string>
     <string name="home_app_info_patches_name_default">修補</string>
     <string name="home_app_info_patches_name_fallback">未命名</string>
     <string name="home_app_info_patches_replace_fail">無法匯入修補：%s</string>
     <string name="home_app_info_repatch_no_original_apk">找不到原始 APK。無法重新修補這個應用程式</string>
-    <string name="home_app_info_repatch_requires_original">重新修補需要原始 APK 檔案</string>
     <string name="home_app_info_original_package_name">原始套件名稱</string>
     <string name="home_app_info_applied_patches">已套用修補</string>
     <string name="home_app_info_patch_source_used">使用的修補來源</string>
@@ -180,6 +179,13 @@
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">根模式需要在修補之前將原始 APK 安裝在您的裝置上</string>
     <string name="root_gmscore_excluded">GmsCore 支援性修補在 Root 模式中已排除</string>
+    <string name="root_pre_patch_installer_title">选择安装方法</string>
+    <string name="root_pre_patch_installer_description">您的設備已root，請選擇如何安裝修復後的應用程序。</string>
+    <string name="root_pre_patch_installer_mount_title">Root Mount</string>
+    <string name="root_pre_patch_installer_mount_description">將修復後的APK安裝在原始應用程序上方。不需要GmsCore。</string>
+    <string name="root_pre_patch_installer_standard_title">標準安裝</string>
+    <string name="root_pre_patch_installer_standard_description">將其安裝為單獨應用程序，並提供GmsCore支持。在修復後選擇安裝程序（系統安裝程序、Shizuku等）。</string>
+    <string name="root_pre_patch_installer_hint">安裝方法決定哪些修復後包含在內，修復後無法更改。</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">已將錯誤複製到剪貼簿</string>
     <string name="patcher_error_log">錯誤記錄檔</string>
@@ -279,9 +285,10 @@
     <string name="settings_appearance_system">系統</string>
     <string name="settings_appearance_light">淺色</string>
     <string name="settings_appearance_dark">深色</string>
-    <string name="settings_appearance_black">黑色</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">強調色</string>
+    <string name="settings_appearance_pure_black">純黑色</string>
+    <string name="settings_appearance_pure_black_description">使用OLED顯示器的真正黑色背景。</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">應用程式語言</string>
     <string name="settings_appearance_app_language_current">目前語言</string>

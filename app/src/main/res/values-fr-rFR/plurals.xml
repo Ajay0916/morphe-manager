@@ -24,4 +24,12 @@
         <item quantity="one">%d source activée</item>
         <item quantity="other">%d sources activées</item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="one">​%1$d patch obsolète a été supprimé de la sélection enregistrée</item>
+        <item quantity="other">​%1$d patchs obsolètes ont été supprimés de la sélection enregistrée</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="one">%1$d source installée</item>
+        <item quantity="other">%1$d sources installées</item>
+    </plurals>
 </resources>

@@ -18,4 +18,10 @@
     <plurals name="sources_dialog_enabled_toast">
         <item quantity="other">Mengaktifkan %d sumber</item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="other">Menghapus %1$d tambalan yang sudah usang dari pemilihan yang disimpan</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="other">%1$d sumber telah dipasang</item>
+    </plurals>
 </resources>

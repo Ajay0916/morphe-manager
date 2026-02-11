@@ -41,7 +41,6 @@
     <string name="home_greeting_10">מופעל על ידי קפאין ותיקונים טובים</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">מקורות תיקונים</string>
-    <string name="sources_management_subtitle">%d מקורות מותקנים</string>
     <string name="sources_management_open_in_browser">פתח בדפדפן</string>
     <string name="sources_management_failed_to_open_url">שגגה להכזת אתר</string>
     <string name="sources_management_date_added">הוסף</string>
@@ -79,6 +78,8 @@
     <string name="home_apk_availability_unpatched_label">לא מתקן</string>
     <string name="home_apk_availability_yes">כן, יש לי את זה</string>
     <string name="home_apk_availability_no">לא, עזור לי למצוא את זה</string>
+    <string name="home_apk_use_saved_with_version">השתמש באפאק שמור (גרסה %s)</string>
+    <string name="home_app_info_no_saved_apk">אין אפאק שמור. תיקון ידרש לבחור את קובץ האפאק שוב</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">הורד את ה-APK המקורי</string>
     <string name="home_download_instructions_steps_title">הוראות:</string>
@@ -161,12 +162,10 @@
     <string name="home_app_info_delete_item_patched_apk">קובץ APK מתוקן</string>
     <string name="home_app_info_delete_item_original_apk">קובץ APK מקורי</string>
     <string name="home_app_info_delete_preservation_note">הבחירה שלך ותצורה תישמרו לשימוש עתידי</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">הוסר %d תיקון מיושן מהסלקציה המוגשת</string>
     <string name="home_app_info_patches_name_default">פיצ\'ים</string>
     <string name="home_app_info_patches_name_fallback">לא מוגדר</string>
     <string name="home_app_info_patches_replace_fail">שגגה להוריד פיצ\'ים: %s</string>
     <string name="home_app_info_repatch_no_original_apk">APK מקורי לא נמצא. לא ניתן לשחזר את האפליקציה הזו</string>
-    <string name="home_app_info_repatch_requires_original">פיצ\'ח מחדש דורש את קובץ APK המקורי</string>
     <string name="home_app_info_original_package_name">שם חבילה מקורי</string>
     <string name="home_app_info_applied_patches">פיצ\'ים יושם</string>
     <string name="home_app_info_patch_source_used">החבילה הועברה</string>
@@ -181,6 +180,13 @@
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">מוד רוט דורש את APK המקורי להתקין על מכשיר שלך לפני השחזור</string>
     <string name="root_gmscore_excluded">תיקון תמיכה ב-GmsCore אינו נכלל במצב Root</string>
+    <string name="root_pre_patch_installer_title">בחר את שיטת התקנה</string>
+    <string name="root_pre_patch_installer_description">החלק של המכשיר שלך הוא שור. בחר כיצד תרצה להתקין את האפליקציה הפגומה</string>
+    <string name="root_pre_patch_installer_mount_title">הרכבת שור</string>
+    <string name="root_pre_patch_installer_mount_description">הרכיב אפליקציה פגומה על האפליקציה הסטנדרטית. אין צורך בגמסקור</string>
+    <string name="root_pre_patch_installer_standard_title">התקנה סטנדרטית</string>
+    <string name="root_pre_patch_installer_standard_description">התקן כערכת אפליקציות נפרדת עם תמיכה בגמסקור. בחר התקן (התקן מערכת, שיזוקו, וכו.) לאחר הפגמה</string>
+    <string name="root_pre_patch_installer_hint">שיטת ההתקנה קובעת את הפגמים הכוללים וכאלה לא ניתן לשנות לאחר הפגמה</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">השגיאה הועתקה ללוח</string>
     <string name="patcher_error_log">יומן שגיאות</string>
@@ -280,9 +286,10 @@
     <string name="settings_appearance_system">מערכת</string>
     <string name="settings_appearance_light">אור</string>
     <string name="settings_appearance_dark">שחור</string>
-    <string name="settings_appearance_black">שחור</string>
     <string name="settings_appearance_dynamic">Morphe</string>
     <string name="settings_appearance_accent_color">צבע מוביל</string>
+    <string name="settings_appearance_pure_black">שחור טהור</string>
+    <string name="settings_appearance_pure_black_description">שימוש רקע שחור אמיתי עבור מסכי OLED</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">שפת היישום</string>
     <string name="settings_appearance_app_language_current">שפה נוכח</string>

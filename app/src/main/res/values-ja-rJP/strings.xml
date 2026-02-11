@@ -40,7 +40,6 @@
     <string name="home_greeting_10">カフェインと良いパッチで動いている</string>
     <!-- Home Screen - Sources Management -->
     <string name="sources_management_title">パッチソース</string>
-    <string name="sources_management_subtitle">インストール済みのソース %d 件</string>
     <string name="sources_management_open_in_browser">ブラウザで開く</string>
     <string name="sources_management_failed_to_open_url">URL を開けませんでした</string>
     <string name="sources_management_date_added">追加しました</string>
@@ -78,6 +77,8 @@
     <string name="home_apk_availability_unpatched_label">未パッチ</string>
     <string name="home_apk_availability_yes">はい、あります</string>
     <string name="home_apk_availability_no">いいえ、探すのを手伝ってください</string>
+    <string name="home_apk_use_saved_with_version">保存済みAPK (v%s)を使用します</string>
+    <string name="home_app_info_no_saved_apk">保存済みAPKがありません。パッチを当てるには、APKファイルを再度選択してください</string>
     <!-- Home Screen - Dialog 2: Download Instructions -->
     <string name="home_download_instructions_title">オリジナルの APK をダウンロード</string>
     <string name="home_download_instructions_steps_title">操作手順:</string>
@@ -160,12 +161,10 @@
     <string name="home_app_info_delete_item_patched_apk">パッチ適用済み APK ファイル</string>
     <string name="home_app_info_delete_item_original_apk">元の APK ファイル</string>
     <string name="home_app_info_delete_preservation_note">パッチ セレクションとオプションは、今後のパッチ適用のために保持されます</string>
-    <string name="home_app_info_repatch_cleaned_invalid_data">保存済みセレクションから互換性を失ったパッチを %d 件削除しました</string>
     <string name="home_app_info_patches_name_default">パッチ</string>
     <string name="home_app_info_patches_name_fallback">無名</string>
     <string name="home_app_info_patches_replace_fail">パッチの適用に失敗しました: %s</string>
     <string name="home_app_info_repatch_no_original_apk">元の APK が見つかりません。このアプリを再パッチできません</string>
-    <string name="home_app_info_repatch_requires_original">再パッチには元の APK ファイルが必要です</string>
     <string name="home_app_info_original_package_name">元のパッケージ名</string>
     <string name="home_app_info_applied_patches">適用されたパッチ</string>
     <string name="home_app_info_patch_source_used">パッチソースを使用しました</string>
@@ -180,6 +179,13 @@
     <!-- Home Screen - Root Mode -->
     <string name="root_install_apk_required">ルートモードでは、パッチ前の APK を先にインストールする必要があります</string>
     <string name="root_gmscore_excluded">GmsCore サポートパッチは root モードでは除外されます</string>
+    <string name="root_pre_patch_installer_title">インストール方法を選択してください</string>
+    <string name="root_pre_patch_installer_description">このデバイスにはルートアクセスがあります。パッチされたアプリのインストール方法を選択してください</string>
+    <string name="root_pre_patch_installer_mount_title">ルートマウント</string>
+    <string name="root_pre_patch_installer_mount_description">ストックアプリの上にパッチされたAPKをマウントします。GmsCoreは必要ありません</string>
+    <string name="root_pre_patch_installer_standard_title">標準インストール</string>
+    <string name="root_pre_patch_installer_standard_description">パッチ後にインストーラー（システムインストーラー、Shizukuなど）を選択して、別のアプリとしてインストールします。GmsCoreサポートあり</string>
+    <string name="root_pre_patch_installer_hint">インストール方法はどのパッチが含まれるかを決定し、パッチ後には変更できません</string>
     <!-- Patcher Screen -->
     <string name="patcher_error_copied">エラーをクリップボードにコピーしました</string>
     <string name="patcher_error_log">エラーログ</string>
@@ -279,9 +285,10 @@
     <string name="settings_appearance_system">システム</string>
     <string name="settings_appearance_light">明るい</string>
     <string name="settings_appearance_dark">暗い</string>
-    <string name="settings_appearance_black">黒</string>
     <string name="settings_appearance_dynamic">Material You</string>
     <string name="settings_appearance_accent_color">アクセントカラー</string>
+    <string name="settings_appearance_pure_black">ピュアブラック</string>
+    <string name="settings_appearance_pure_black_description">OLEDディスプレイ向けの真っ黒な背景を使用します</string>
     <!-- Settings - Appearance Tab - Language Selector -->
     <string name="settings_appearance_app_language">アプリの言語</string>
     <string name="settings_appearance_app_language_current">現在の言語</string>

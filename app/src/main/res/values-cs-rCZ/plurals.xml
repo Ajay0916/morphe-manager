@@ -36,4 +36,16 @@
         <item quantity="many">Povoleno %d zdrojů</item>
         <item quantity="other">Povoleno %d zdrojů</item>
     </plurals>
+    <plurals name="home_app_info_repatch_cleaned_invalid_data">
+        <item quantity="one">Odstranil jsem %1$d zastaralou opravu ze uložené výběru</item>
+        <item quantity="few">Odstranil jsem %1$d zastaralé opravy ze uložené výběru</item>
+        <item quantity="many">Odstranil jsem %1$d zastaralých oprav ze uložené výběru</item>
+        <item quantity="other">Odstranil jsem %1$d zastaralých oprav ze uložené výběru</item>
+    </plurals>
+    <plurals name="sources_management_subtitle">
+        <item quantity="one">Instalováno %1$d zdrojů</item>
+        <item quantity="few">Instalováno %1$d zdroje</item>
+        <item quantity="many">Instalováno %1$d zdrojů</item>
+        <item quantity="other">Instalováno %1$d zdrojů</item>
+    </plurals>
 </resources>
