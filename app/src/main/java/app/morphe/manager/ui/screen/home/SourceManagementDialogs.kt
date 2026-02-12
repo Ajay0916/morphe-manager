@@ -21,7 +21,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.rotate
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
@@ -29,6 +28,7 @@ import androidx.compose.ui.text.input.ImeAction
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
+import androidx.core.net.toUri
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import app.morphe.manager.R
 import app.morphe.manager.domain.bundles.PatchBundleSource
@@ -37,8 +37,8 @@ import app.morphe.manager.domain.repository.PatchBundleRepository
 import app.morphe.manager.network.dto.MorpheAsset
 import app.morphe.manager.patcher.patch.PatchInfo
 import app.morphe.manager.ui.screen.shared.*
-import app.morphe.manager.util.relativeTime
 import app.morphe.manager.util.simpleMessage
+import app.morphe.manager.util.toFilePath
 import kotlinx.coroutines.flow.mapNotNull
 import org.koin.compose.koinInject
 
@@ -172,7 +172,7 @@ private fun RemoteTabContent(
                     Text(stringResource(R.string.sources_dialog_remote_url))
                 },
                 placeholder = {
-                    Text(text = "github.com/owner/repo")
+                    Text(text = "https://github.com/owner/repo")
                 },
                 showClearButton = true,
                 keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Uri)
@@ -182,7 +182,8 @@ private fun RemoteTabContent(
         // Description
         InfoBadge(
             icon = Icons.Outlined.Info,
-            text = stringResource(R.string.sources_dialog_remote_url_formats),
+            text = stringResource(R.string.sources_dialog_remote_url_formats_title) +
+                    stringResource(R.string.sources_dialog_remote_url_formats_list),
             style = InfoBadgeStyle.Default
         )
     }
@@ -212,7 +213,7 @@ private fun LocalTabContent(
         if (selectedPath != null) {
             InfoBadge(
                 icon = null,
-                text = selectedPath,
+                text = selectedPath.toUri().toFilePath(),
                 style = InfoBadgeStyle.Default
             )
         }
@@ -682,14 +683,15 @@ fun BundleChangelogDialog(
         onDismissRequest = onDismissRequest,
         title = null,
         footer = {
-            MorpheDialogButtonRow(
-                primaryText = stringResource(android.R.string.ok),
-                onPrimaryClick = onDismissRequest
+            MorpheDialogButton(
+                text = stringResource(android.R.string.ok),
+                onClick = onDismissRequest,
+                modifier = Modifier.fillMaxWidth()
             )
         }
     ) {
         when (val current = state) {
-            BundleChangelogState.Loading -> BundleChangelogLoading()
+            BundleChangelogState.Loading -> ChangelogSectionLoading()
             is BundleChangelogState.Error -> BundleChangelogError(
                 error = current.throwable,
                 onDismissRequest = onDismissRequest,
@@ -699,31 +701,6 @@ fun BundleChangelogDialog(
             )
             is BundleChangelogState.Success -> BundleChangelogContent(
                 asset = current.asset
-            )
-        }
-    }
-}
-
-@Composable
-private fun BundleChangelogLoading() {
-    Box(
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(vertical = 64.dp),
-        contentAlignment = Alignment.Center
-    ) {
-        Column(
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(20.dp)
-        ) {
-            CircularProgressIndicator(
-                color = MaterialTheme.colorScheme.primary,
-                modifier = Modifier.size(48.dp)
-            )
-            Text(
-                text = stringResource(R.string.changelog_loading),
-                style = MaterialTheme.typography.bodyMedium,
-                color = LocalDialogSecondaryTextColor.current
             )
         }
     }
@@ -777,7 +754,8 @@ private fun BundleChangelogError(
                 )
                 MorpheDialogButton(
                     text = stringResource(R.string.changelog_retry),
-                    onClick = onRetry
+                    onClick = onRetry,
+                    modifier = Modifier.fillMaxWidth()
                 )
             }
 
@@ -785,7 +763,7 @@ private fun BundleChangelogError(
             MorpheDialogButton(
                 text = stringResource(android.R.string.ok),
                 onClick = onDismissRequest,
-                modifier = Modifier.widthIn(min = 140.dp)
+                modifier = Modifier.fillMaxWidth()
             )
         }
     }
@@ -795,88 +773,20 @@ private fun BundleChangelogError(
 private fun BundleChangelogContent(
     asset: MorpheAsset
 ) {
-    val context = LocalContext.current
-
-    val publishDate = remember(asset.createdAt) {
-        asset.createdAt.relativeTime(context)
-    }
     val markdown = remember(asset.description) {
         asset.description
             .replace("\r\n", "\n")
             .sanitizePatchChangelogMarkdown()
     }
 
-    Column(
-        modifier = Modifier.fillMaxWidth(),
-        verticalArrangement = Arrangement.spacedBy(20.dp)
-    ) {
-        // Header with version info
-        Surface(
-            modifier = Modifier.fillMaxWidth(),
-            shape = RoundedCornerShape(16.dp),
-            color = MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.3f)
-        ) {
-            Row(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(16.dp),
-                horizontalArrangement = Arrangement.spacedBy(14.dp),
-                verticalAlignment = Alignment.CenterVertically
-            ) {
-                // Icon with gradient-like appearance
-                Surface(
-                    shape = CircleShape,
-                    color = MaterialTheme.colorScheme.primary.copy(alpha = 0.25f),
-                    modifier = Modifier.size(56.dp)
-                ) {
-                    Box(contentAlignment = Alignment.Center) {
-                        Icon(
-                            imageVector = Icons.Outlined.History,
-                            contentDescription = null,
-                            tint = MaterialTheme.colorScheme.primary,
-                            modifier = Modifier.size(28.dp)
-                        )
-                    }
-                }
-
-                // Version info
-                Column(
-                    verticalArrangement = Arrangement.spacedBy(4.dp)
-                ) {
-                    Text(
-                        text = asset.version,
-                        style = MaterialTheme.typography.titleLarge,
-                        fontWeight = FontWeight.Bold,
-                        color = LocalDialogTextColor.current
-                    )
-                    Row(
-                        horizontalArrangement = Arrangement.spacedBy(6.dp),
-                        verticalAlignment = Alignment.CenterVertically
-                    ) {
-                        Icon(
-                            imageVector = Icons.Outlined.Schedule,
-                            contentDescription = null,
-                            tint = MaterialTheme.colorScheme.primary,
-                            modifier = Modifier.size(16.dp)
-                        )
-                        Text(
-                            text = publishDate,
-                            style = MaterialTheme.typography.bodySmall,
-                            color = MaterialTheme.colorScheme.primary,
-                            fontWeight = FontWeight.Medium
-                        )
-                    }
-                }
-            }
-        }
-
-        // Changelog markdown content
-        Changelog(
-            markdown = markdown.ifBlank {
-                stringResource(R.string.changelog_empty)
-            }
-        )
-    }
+    // Changelog content
+    ChangelogSection(
+        asset = asset,
+        headerIcon = Icons.Outlined.History,
+        markdown = markdown,
+        emptyChangelogText = stringResource(R.string.changelog_empty),
+        textColor = LocalDialogTextColor.current
+    )
 }
 
 private sealed interface BundleChangelogState {
